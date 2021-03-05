@@ -203,7 +203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1309561023}
         m_MethodName: SceneChange2a
         m_Mode: 1
         m_Arguments:
@@ -320,7 +320,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NO!
+  m_Text: You look different than your photo.
 --- !u!222 &225386461
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YES....
+  m_Text: 'You''re cute too. '
 --- !u!222 &316554406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -518,7 +518,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 66, y: -305}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385488273
 MonoBehaviour:
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1309561023}
         m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
@@ -1001,8 +1001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -155, y: -305}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -263, y: -305}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &661935802
 MonoBehaviour:
@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1309561023}
         m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1309561023}
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -1509,7 +1509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 1}
+  m_Color: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1735,20 +1735,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 0
-  Char1name: {fileID: 0}
-  Char1speech: {fileID: 0}
-  Char2name: {fileID: 0}
-  Char2speech: {fileID: 0}
+  Char1name: {fileID: 619962894}
+  Char1speech: {fileID: 1979088764}
+  Char2name: {fileID: 1793708437}
+  Char2speech: {fileID: 1248213548}
   Char3name: {fileID: 0}
   Char3speech: {fileID: 0}
-  dialogue: {fileID: 0}
-  ArtChar1: {fileID: 0}
-  ArtBG1: {fileID: 0}
-  Choice1a: {fileID: 0}
-  Choice1b: {fileID: 0}
-  NextScene1Button: {fileID: 0}
-  NextScene2Button: {fileID: 0}
-  nextButton: {fileID: 0}
+  dialogue: {fileID: 1752547280}
+  ArtChar1: {fileID: 549320586}
+  ArtBG1: {fileID: 350556517}
+  Choice1a: {fileID: 661935800}
+  Choice1b: {fileID: 385488271}
+  NextScene1Button: {fileID: 35273084}
+  NextScene2Button: {fileID: 1721228623}
+  nextButton: {fileID: 1071203552}
 --- !u!1 &1721228623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,7 +1831,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1309561023}
         m_MethodName: SceneChange2b
         m_Mode: 1
         m_Arguments:
@@ -2003,7 +2003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 1}
+  m_Color: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

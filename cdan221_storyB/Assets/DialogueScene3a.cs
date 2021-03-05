@@ -52,46 +52,46 @@ public class DialogueScene3a : MonoBehaviour {
 		else if (primeInt == 2){ 
 			ArtChar1.SetActive(true); 
 			dialogue.SetActive(true); 
-			Char1name.text = "Jeda"; 
-			Char1speech.text = "Wakey wakey, human.";
+			Char1name.text = ""; 
+			Char1speech.text = "";
 			Char2name.text = ""; 
-			Char2speech.text = "";
+			Char2speech.text = "You chose to go on a date with Natas'sha. The two of you decided to go to the cafe, MoonStruck.";
 		}
 		else if (primeInt ==3){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = "You"; 
-			Char2speech.text = "Wuh..? What happended?";
+			Char2name.text = ""; 
+			Char2speech.text = "You'd always heard good things about it, but it never really seemed like your taste; or within your budget.";
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 4){
-			Char1name.text = "Jeda"; 
-			Char1speech.text = "I know I did not hit you that hard.";
-			Char2name.text = ""; 
-			Char2speech.text = "";
-		}
-		else if (primeInt == 5){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = "You"; 
-			Char2speech.text = "Hit me? Why?"; 
+			Char2name.text = ""; 
+			Char2speech.text = "Luckily, today you're being treated by a princess of Hell.";
+		}
+		else if (primeInt == 5){
+			Char1name.text = "Natas'sha"; 
+			Char1speech.text = "Yoohooo! Over here!";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 6){
-			Char1name.text = "Jeda"; 
-			Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+			Char1name.text = ""; 
+			Char1speech.text = "";
 			Char2name.text = ""; 
-			Char2speech.text = "";
+			Char2speech.text = "Already sitting at one of the tables, you see the demon girl waving at you.";
 		}
 		else if (primeInt ==7){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = "You"; 
-			Char2speech.text = "Why do you think I know anything?";
+			Char2name.text = ""; 
+			Char2speech.text = "She looks a bit different than her photo-- With the tan skin and casual clothes, she could almost be mistaken for human at first glance.";
 		}
 		else if (primeInt == 8){
-			Char1name.text = "Jeda"; 
-			Char1speech.text = "Do not play the stupid. You will take me to him.";
+			Char1name.text = "Natas'sha"; 
+			Char1speech.text = "Aww, look at you! You're even cuter in person. I always forget how tiny mortals are.";
 			Char2name.text = ""; 
 			Char2speech.text = "";
 			// Turn off "Next" button, turn on "Choice" buttons
@@ -102,14 +102,14 @@ public class DialogueScene3a : MonoBehaviour {
 		}
 		// ENCOUNTER AFTER CHOICE #1
 		else if (primeInt == 100){
-			Char1name.text = "Jeda"; 
-			Char1speech.text = "Then you are no use to me, and must be silenced.";
+			Char1name.text = "Natas'sha"; 
+			Char1speech.text = "Ha! What, that old thing?";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 		} 
 		else if (primeInt == 101){ 
-			Char1name.text = "Jeda"; 
-			Char1speech.text = "Come back here! Do not think you can hide from me!";
+			Char1name.text = "Natas'sha"; 
+			Char1speech.text = "Yeah, I know. I was craazzzyyyy back then. lol";
 			Char2name.text = ""; 
 			Char2speech.text = "";
 			nextButton.SetActive(false); 
@@ -139,7 +139,7 @@ public class DialogueScene3a : MonoBehaviour {
 		Char1name.text = ""; 
 		Char1speech.text = "";
 		Char2name.text = "You"; 
-		Char2speech.text = "I don't know what you're talking about!";
+		Char2speech.text = "You look pretty different than your photo. I mean, no red skin and fire and all..";
 		primeInt = 99;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
