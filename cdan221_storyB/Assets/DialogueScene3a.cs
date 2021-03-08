@@ -112,22 +112,52 @@ public class DialogueScene3a : MonoBehaviour {
 			Char1speech.text = "Yeah, I know. I was craazzzyyyy back then. lol";
 			Char2name.text = ""; 
 			Char2speech.text = "";
+		}
+		else if (primeInt == 102){
+			Char1name.text = "Natas'sha"; 
+			Char1speech.text = "But I look super hot! So like, who cares, right?";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
 			nextButton.SetActive(false); 
 			allowSpace = false; 
 			NextScene1Button.SetActive(true);
 		}
 
 		else if (primeInt == 200){
-			Char1name.text = "Jeda"; 
-			Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
+			Char1name.text = "Natas'sha"; 
+			Char1speech.text = "Me? Cute...?";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 		} 
 		else if (primeInt == 201){ 
 			Char1name.text = ""; 
 			Char1speech.text = "";
+			Char2name.text = ""; 
+			Char2speech.text = "Natas'sha bursts into laughter.";
+		}	
+		else if (primeInt == 202){
+			Char1name.text = "Natas'sha"; 
+			Char1speech.text = "OMMGGGG SKSKSKSKSKSKABSHSNFNFNDNF AHAHAHA ";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+		}
+		else if (primeInt == 203){
+			Char1name.text = "Natas'sha"; 
+			Char1speech.text = "You’re toooo sweeet! Like, TOO sweet! I might vomit for real, or like, get that disease and die.";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+		} 	
+		else if (primeInt == 204){ 
+			Char1name.text = ""; 
+			Char1speech.text = "";
 			Char2name.text = "You"; 
-			Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+			Char2speech.text = "Do you mean diabetes?.";
+		}	
+		else if (primeInt == 205){ 
+			Char1name.text = "Natas'sha"; 
+			Char1speech.text = "Whatever. lol";
+			Char2name.text = ""; 
+			Char2speech.text = "";
 			nextButton.SetActive(false); 
 			allowSpace = false; 
 			NextScene2Button.SetActive(true);
@@ -150,7 +180,7 @@ public class DialogueScene3a : MonoBehaviour {
 		Char1name.text = ""; 
 		Char1speech.text = ""; 
 		Char2name.text = "You"; 
-		Char2speech.text = "Sure, anything you want... just lay off the club.";
+		Char2speech.text = "You seem really cute too.";
 		primeInt = 199;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);

@@ -1294,7 +1294,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lead Jeda to Ragu
+  m_Text: 'Get in line with Natas''sha. '
 --- !u!222 &1105113763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1372,7 +1372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Run to warn Ragu
+  m_Text: 'Get in line with Natas''sha. '
 --- !u!222 &1169357507
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1734,7 +1734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030fa9b5d3d19c44eb3c181827fbd7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  primeInt: 0
+  primeInt: 1
   Char1name: {fileID: 619962894}
   Char1speech: {fileID: 1979088764}
   Char2name: {fileID: 1793708437}
