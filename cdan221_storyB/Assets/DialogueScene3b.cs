@@ -14,7 +14,8 @@ public class DialogueScene3b : MonoBehaviour {
 	public Text Char3name; 
 	public Text Char3speech; 
 	public GameObject dialogue; 
-	public GameObject ArtChar1; 
+	public GameObject ArtChar1a; 
+	public GameObject ArtChar1b; 
 	public GameObject ArtBG1; 
 	public GameObject Choice1a; 
 	public GameObject Choice1b; 
@@ -27,7 +28,8 @@ public class DialogueScene3b : MonoBehaviour {
 
 	void Start(){ // initial visibility settings
 		dialogue.SetActive(false);
-		ArtChar1.SetActive(false); 
+		ArtChar1a.SetActive(false); 
+		ArtChar1b.SetActive(false);
 		ArtBG1.SetActive(true);
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -50,18 +52,23 @@ public class DialogueScene3b : MonoBehaviour {
 			// AudioSource.Play();
 		}
 		else if (primeInt == 2){ 
-			ArtChar1.SetActive(true); 
+			 
 			dialogue.SetActive(true); 
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = "Barista"; 
-			Char2speech.text = "Hey, Nat! Good to see ya.";
+			Char2name.text = ""; 
+			Char2speech.text = "";
+			Char3name.text = "BARISTA";
+			Char3speech.text = "Hey Nat!";
 		}
 		else if (primeInt ==3){
+			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas’sha"; 
 			Char1speech.text = "Heyyy Lulu! I’ll have the usual, babe.";
 			Char2name.text = ""; 
 			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 4){
@@ -69,19 +76,25 @@ public class DialogueScene3b : MonoBehaviour {
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = "Natas’sha hands the werewolf barista the reusable cup she brought with her.";
+			Char3name.text = "";
+			Char3speech.text = "";
 		}
 		else if (primeInt == 5){
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 6){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = "You"; 
+			Char2name.text = "YOU"; 
 			Char2speech.text = "Um...";
+			Char3name.text = "";
+			Char3speech.text = "";
 			Choice1a.SetActive(true); // function Choice1aFunct()
 			Choice1b.SetActive(true); // function Choice1bFunct()
 		}
@@ -91,36 +104,50 @@ public class DialogueScene3b : MonoBehaviour {
 			Char1speech.text = "Ohh, I see. You’ve got a sweet tooth?";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
 		} 
 		else if (primeInt == 101){ 
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "You"; 
 			Char2speech.text = "Haha, sort of.";
+			Char3name.text = "";
+			Char3speech.text = "";
 		}
 		else if (primeInt == 102){
+			ArtChar1a.SetActive(false);
+			ArtChar1b.SetActive(true);
 			Char1name.text = "Natas’sha"; 
 			Char1speech.text = "Hmm. Well, be careful. That’s basically a milkshake. I don’t get how people can have that kind of thing so early in the day.";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
 		} 
 		else if (primeInt == 103){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = "You"; 
+			Char2name.text = "YOU"; 
 			Char2speech.text = "Oh.. I guess that’s true. I just don’t like coffee is all."; 
+			Char3name.text = "";
+			Char3speech.text = "";
 		} 
 		else if (primeInt == 104){
 			Char1name.text = "Natas’sha"; 
 			Char1speech.text = "They do have tea, you know. That’s what I get. Suuuper sweet, and still caffeinated. Not to mention healthier...";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
 		} 
 		else if (primeInt == 105){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = ""; 
-			Char2speech.text = "You get the feeling that Natas’sha is judging your diet…."; 
+			Char2name.text = "YOU"; 
+			Char2speech.text = "(I get the feeling that Natas’sha is judging your diet….)"; 
+			Char3name.text = "";
+			Char3speech.text = "";
 			nextButton.SetActive(false); 
 			allowSpace = false; 
 			NextScene1Button.SetActive(true);
@@ -131,12 +158,16 @@ public class DialogueScene3b : MonoBehaviour {
 			Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
 		} 
 		else if (primeInt == 201){ 
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "You"; 
 			Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+			Char3name.text = "";
+			Char3speech.text = "";
 			nextButton.SetActive(false); 
 			allowSpace = false; 
 			NextScene2Button.SetActive(true);
@@ -149,6 +180,8 @@ public class DialogueScene3b : MonoBehaviour {
 		Char1speech.text = "";
 		Char2name.text = "You"; 
 		Char2speech.text = "I’ll have the… ‘Midnight Mocha Frappuccino.’";
+		Char3name.text = "";
+		Char3speech.text = "";
 		primeInt = 99;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -158,8 +191,10 @@ public class DialogueScene3b : MonoBehaviour {
 	public void Choice1bFunct(){ 
 		Char1name.text = ""; 
 		Char1speech.text = ""; 
-		Char2name.text = "You"; 
+		Char2name.text = "YOU"; 
 		Char2speech.text = "I’ll have the… ‘Blue Moon Styx Bubble Tea.’";
+		Char3name.text = "";
+		Char3speech.text = "";
 		primeInt = 199;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
