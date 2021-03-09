@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 35273087}
   - component: {fileID: 35273086}
   m_Layer: 5
-  m_Name: ButtonScene3c
+  m_Name: ButtonScene3d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,7 +153,7 @@ RectTransform:
   m_Children:
   - {fileID: 1169357505}
   m_Father: {fileID: 1309561021}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -320,7 +320,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Midnight Mocha Frappuccino.
+  m_Text: Was I supposed to?
 --- !u!222 &225386461
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Blue Moon Styx Bubble Tea.
+  m_Text: I forgot mine.
 --- !u!222 &316554406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -591,7 +591,7 @@ RectTransform:
   m_Children:
   - {fileID: 316554404}
   m_Father: {fileID: 1309561021}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -718,8 +718,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1248213547}
   - {fileID: 1979088763}
+  - {fileID: 1248213547}
   - {fileID: 1779735594}
   m_Father: {fileID: 1752547281}
   m_RootOrder: 1
@@ -1033,7 +1033,7 @@ RectTransform:
   m_Children:
   - {fileID: 225386459}
   m_Father: {fileID: 1309561021}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1131,6 +1131,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661935800}
   m_CullTransparentMesh: 0
+--- !u!1 &762131039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762131040}
+  - component: {fileID: 762131042}
+  - component: {fileID: 762131041}
+  m_Layer: 5
+  m_Name: ArtChar1c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &762131040
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762131039}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1309561021}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2, y: -1}
+  m_SizeDelta: {x: 1280, y: 720}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &762131041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762131039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: bdaaf04dcd31acf4cab8ed28cf772cd1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &762131042
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762131039}
+  m_CullTransparentMesh: 0
 --- !u!1 &1071203552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,7 +1237,7 @@ RectTransform:
   m_Children:
   - {fileID: 1234686816}
   m_Father: {fileID: 1309561021}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1330,7 +1404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Go sit down. '
+  m_Text: Enjoy the rest of the date.
 --- !u!222 &1105113763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1408,7 +1482,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go sit down.
+  m_Text: ...Huh? What's that noise?
 --- !u!222 &1169357507
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1525,7 +1599,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 435803493}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1744,6 +1818,7 @@ RectTransform:
   - {fileID: 350556518}
   - {fileID: 549320587}
   - {fileID: 1797315879}
+  - {fileID: 762131040}
   - {fileID: 1752547281}
   - {fileID: 35273085}
   - {fileID: 1721228624}
@@ -1767,7 +1842,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1309561017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ffdff48e3954b74a9c49c49c9ede40f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2985f9ccafeac1444a0de012e623ac32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 0
@@ -1780,6 +1855,7 @@ MonoBehaviour:
   dialogue: {fileID: 1752547280}
   ArtChar1a: {fileID: 549320586}
   ArtChar1b: {fileID: 1797315878}
+  ArtChar1c: {fileID: 762131039}
   ArtBG1: {fileID: 350556517}
   Choice1a: {fileID: 661935800}
   Choice1b: {fileID: 385488271}
@@ -1799,7 +1875,7 @@ GameObject:
   - component: {fileID: 1721228626}
   - component: {fileID: 1721228625}
   m_Layer: 5
-  m_Name: ButtonScene2b
+  m_Name: ButtonScene3e
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1818,7 +1894,7 @@ RectTransform:
   m_Children:
   - {fileID: 1105113761}
   m_Father: {fileID: 1309561021}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1868,7 +1944,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1309561022}
         m_MethodName: SceneChange2b
         m_Mode: 1
         m_Arguments:
@@ -1948,7 +2024,7 @@ RectTransform:
   - {fileID: 1264305310}
   - {fileID: 435803493}
   m_Father: {fileID: 1309561021}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2252,7 +2328,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 435803493}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

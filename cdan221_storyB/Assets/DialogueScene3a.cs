@@ -53,21 +53,21 @@ public class DialogueScene3a : MonoBehaviour {
 			dialogue.SetActive(true); 
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = ""; 
-			Char2speech.text = "You chose to go on a date with Natas'sha. The two of you decided to go to the cafe, MoonStruck.";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "(I chose to go on a date with Natas'sha. The two of us decided to go to the cafe, MoonStruck.)";
 		}
 		else if (primeInt ==3){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = ""; 
-			Char2speech.text = "You'd always heard good things about it, but it never really seemed like your taste; or within your budget.";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "I'd always heard good things about it, but it never really seemed like my taste; or within my budget).";
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 4){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = ""; 
-			Char2speech.text = "Luckily, today you're being treated by a princess of Hell.";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "Luckily today I'm being treated by a princess of Hell.";
 		}
 		else if (primeInt == 5){
 			Char1name.text = "Natas'sha"; 
@@ -80,14 +80,14 @@ public class DialogueScene3a : MonoBehaviour {
 			ArtChar1.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = ""; 
-			Char2speech.text = "Already sitting at one of the tables, you see the demon girl waving at you.";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "Oh, hi! It's nice to finally meet you..";
 		}
 		else if (primeInt ==7){
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
-			Char2speech.text = "She looks a bit different than her photo-- With the tan skin and casual clothes, she could almost be mistaken for human at first glance.";
+			Char2speech.text = "(She looks a bit different than her photo-- With the tan skin and casual clothes, she could almost be mistaken for human at first glance.)";
 		}
 		else if (primeInt == 8){
 			Char1name.text = "Natas'sha"; 
@@ -150,8 +150,8 @@ public class DialogueScene3a : MonoBehaviour {
 		else if (primeInt == 204){ 
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = "You"; 
-			Char2speech.text = "Do you mean diabetes?.";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "Do...you mean diabetes?";
 		}	
 		else if (primeInt == 205){ 
 			Char1name.text = "Natas'sha"; 
@@ -168,7 +168,7 @@ public class DialogueScene3a : MonoBehaviour {
 	public void Choice1aFunct(){
 		Char1name.text = ""; 
 		Char1speech.text = "";
-		Char2name.text = "You"; 
+		Char2name.text = "YOU"; 
 		Char2speech.text = "You look pretty different than your photo. I mean, no red skin and fire and all..";
 		primeInt = 99;
 		Choice1a.SetActive(false);
@@ -179,7 +179,7 @@ public class DialogueScene3a : MonoBehaviour {
 	public void Choice1bFunct(){ 
 		Char1name.text = ""; 
 		Char1speech.text = ""; 
-		Char2name.text = "You"; 
+		Char2name.text = "YOU"; 
 		Char2speech.text = "You seem really cute too.";
 		primeInt = 199;
 		Choice1a.SetActive(false);
@@ -189,9 +189,9 @@ public class DialogueScene3a : MonoBehaviour {
 	}
 
 	public void SceneChange2a(){
-		SceneManager.LoadScene("Scene2a");
+		SceneManager.LoadScene("Scene3b");
 	} 
 	public void SceneChange2b(){ 
-		SceneManager.LoadScene("Scene2b");
+		SceneManager.LoadScene("Scene3b");
 	}
 }

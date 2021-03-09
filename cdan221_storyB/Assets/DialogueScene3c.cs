@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio; 
 
-public class DialogueScene3b : MonoBehaviour { 
+public class DialogueScene3c : MonoBehaviour { 
 	public int primeInt =0; // This integer drives game progress!
 	public Text Char1name; 
 	public Text Char1speech;
@@ -16,6 +16,7 @@ public class DialogueScene3b : MonoBehaviour {
 	public GameObject dialogue; 
 	public GameObject ArtChar1a; 
 	public GameObject ArtChar1b; 
+	public GameObject ArtChar1c; 
 	public GameObject ArtBG1; 
 	public GameObject Choice1a; 
 	public GameObject Choice1b; 
@@ -30,6 +31,7 @@ public class DialogueScene3b : MonoBehaviour {
 		dialogue.SetActive(false);
 		ArtChar1a.SetActive(false); 
 		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
 		ArtBG1.SetActive(true);
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -52,19 +54,18 @@ public class DialogueScene3b : MonoBehaviour {
 			// AudioSource.Play();
 		}
 		else if (primeInt == 2){ 
-			 
+			ArtChar1a.SetActive(true);
 			dialogue.SetActive(true); 
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = ""; 
-			Char2speech.text = "";
-			Char3name.text = "BARISTA";
-			Char3speech.text = "Hey cuties! What I can get you two?";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "It was pretty cool of you to bring your own cup. I remember you said you really care about the environment-- that’s admirable.";
+			Char3name.text = "";
+			Char3speech.text = "";
 		}
 		else if (primeInt ==3){
-			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas’sha"; 
-			Char1speech.text = "Heyyy Lulu! I’ll have my usual.";
+			Char1speech.text = "Of course! Too little people care about that kind of stuff these days. ESPECIALLY in Hell!";
 			Char2name.text = ""; 
 			Char2speech.text = "";
 			Char3name.text = "";
@@ -73,27 +74,72 @@ public class DialogueScene3b : MonoBehaviour {
 		}
 		else if (primeInt == 4){
 			ArtChar1a.SetActive(false);
-			Char1name.text = ""; 
-			Char1speech.text = "";
+			ArtChar1b.SetActive(true);
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "All those lost souls tangled up in litter… I hate to see it happen to my home. Like, this kind of thing should only happen on Earth!";
 			Char2name.text = ""; 
 			Char2speech.text = "";
-			Char3name.text = "Lulu";
-			Char3speech.text = "Of course! I'll take that cup for you, babe.";
+			Char3name.text = "";
+			Char3speech.text = "";
 		}
 		else if (primeInt == 5){
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "That’s why I’m using my power and status in Hell for the greater good!";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
+			//gameHandler.AddPlayerStat(1);
+		}
+		else if (primeInt == 6){
+			ArtChar1a.SetActive(true);
+			ArtChar1b.SetActive(false);
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "Woah. That’s really cool of you..!";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+			else if (primeInt == 7){
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "Lulu";
-			Char3speech.text = "And what'll the cute mortal be having?";
-			//gameHandler.AddPlayerStat(1);
+			Char3speech.text = "Two Styx Teas for Natas’sha and friend!";
 		}
-		else if (primeInt == 6){
+		else if (primeInt == 8){
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "Speaking of!";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 9){
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "Um...";
+			Char2speech.text = "Oh, hey. Your friend forgot my straw."; 
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 10){
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "What do you mean?";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 11){
+			ArtChar1a.SetActive(false);
+			ArtChar1b.SetActive(true);
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "You're joking, right? Didn't you bring your own straw?";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
 			Char3name.text = "";
 			Char3speech.text = "";
 			Choice1a.SetActive(true); // function Choice1aFunct()
@@ -101,29 +147,28 @@ public class DialogueScene3b : MonoBehaviour {
 		}
 		// ENCOUNTER AFTER CHOICE #1
 		else if (primeInt == 100){
-			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas’sha"; 
-			Char1speech.text = "Ohh, I see. You’ve got a sweet tooth?";
+			Char1speech.text = "Were you… supposed to?";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 101){ 
-			Char1name.text = ""; 
-			Char1speech.text = "";
-			Char2name.text = "YOU"; 
-			Char2speech.text = "Haha, sort of.";
+			ArtChar1b.SetActive(false);
+			ArtChar1c.SetActive(true);
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "WERE YOU SUPPOSED TO?";
+			Char2name.text = ""; 
+			Char2speech.text = ".";
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
 		else if (primeInt == 102){
-			ArtChar1a.SetActive(false);
-			ArtChar1b.SetActive(true);
-			Char1name.text = "Natas’sha"; 
-			Char1speech.text = "Hmm. Well, be careful. That’s basically a milkshake. I don’t get how people can have that kind of thing so early in the day.";
-			Char2name.text = ""; 
-			Char2speech.text = ""; 
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "(Uh oh.)"; 
 			Char3name.text = "";
 			Char3speech.text = "";
 		} 
@@ -131,23 +176,41 @@ public class DialogueScene3b : MonoBehaviour {
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "Oh.. I guess that’s true. I just don’t like coffee is all."; 
+			Char2speech.text = "I mean, I just never got the metal straw thing! Of course litter and pollution is bad, and we should definitely recycle and stuff…"; 
 			Char3name.text = "";
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 104){
-			Char1name.text = "Natas’sha"; 
-			Char1speech.text = "They do have tea, you know. That’s what I get. Suuuper sweet, and still caffeinated. Not to mention healthier...";
-			Char2name.text = ""; 
-			Char2speech.text = ""; 
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "But isn’t the majority of environmental problems the direct result of large companies? I don’t think just ditching plastic straws is an effective solution..."; 
 			Char3name.text = "";
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 105){
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "LARGE COMPANIES ARE THE GREATEST BREEDING GROUND FOR DAMNED SOULS. THAT’S FOOD FOR DEMONS! THAT’S GOOD FOR THE ENVIRONMENT!!";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 106){
+			ArtChar1b.SetActive(true);
+			ArtChar1c.SetActive(false);
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "Ugh! You mortals can be so ignorant. You're lucky that I have extras.";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 107){
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "(I get the feeling that Natas’sha is judging your diet….)"; 
+			Char2speech.text = "...Sorry. Thanks."; 
 			Char3name.text = "";
 			Char3speech.text = "";
 			nextButton.SetActive(false); 
@@ -158,7 +221,7 @@ public class DialogueScene3b : MonoBehaviour {
 		else if (primeInt == 200){
 			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas'sha"; 
-			Char1speech.text = "O. M. G. No freakin way!";
+			Char1speech.text = "Really?";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
@@ -168,13 +231,15 @@ public class DialogueScene3b : MonoBehaviour {
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "What? Is it bad?";
+			Char2speech.text = "Yeah, sorry.. I was super in a rush to get out here today.";
 			Char3name.text = "";
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 202){
+			ArtChar1b.SetActive(false);
+			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas'sha"; 
-			Char1speech.text = "That’s what I get! Like, every time!";
+			Char1speech.text = "Aww. Too excited to see me, huh?";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
@@ -182,41 +247,9 @@ public class DialogueScene3b : MonoBehaviour {
 		} 
 		else if (primeInt == 203){
 			Char1name.text = "Natas'sha"; 
-			Char1speech.text = "That's sooo funny. I can't believe you like Styx Tea!";
+			Char1speech.text = "Well, you’re in luck. I always carry extra straws with me.";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
-			Char3name.text = "";
-			Char3speech.text = "";
-		} 
-		else if (primeInt == 204){
-			Char1name.text = ""; 
-			Char1speech.text = "";
-			Char2name.text = "YOU"; 
-			Char2speech.text = "Oh, uh.. I've actually never tried it. Is it good?"; 
-			Char3name.text = "";
-			Char3speech.text = "";
-		} 
-		else if (primeInt == 205){
-			Char1name.text = "Natas'sha"; 
-			Char1speech.text = "SO good.";
-			Char2name.text = ""; 
-			Char2speech.text = ""; 
-			Char3name.text = "";
-			Char3speech.text = "";
-		} 
-		else if (primeInt == 206){
-			Char1name.text = "Natas'sha"; 
-			Char1speech.text = "I know that damned souls can be a bit hard to swallow for mortals, but once you get used to it you’ll love it!";
-			Char2name.text = ""; 
-			Char2speech.text = ""; 
-			Char3name.text = "";
-			Char3speech.text = "";
-		} 
-		else if (primeInt == 207){
-			Char1name.text = ""; 
-			Char1speech.text = "";
-			Char2name.text = "YOU"; 
-			Char2speech.text = "(Damned what-now?!)"; 
 			Char3name.text = "";
 			Char3speech.text = "";
 			nextButton.SetActive(false); 
@@ -229,8 +262,8 @@ public class DialogueScene3b : MonoBehaviour {
 	public void Choice1aFunct(){
 		Char1name.text = ""; 
 		Char1speech.text = "";
-		Char2name.text = "You"; 
-		Char2speech.text = "I’ll have the… ‘Midnight Mocha Frappuccino.’";
+		Char2name.text = "YOU"; 
+		Char2speech.text = "Oops. Was I supposed to?";
 		Char3name.text = "";
 		Char3speech.text = "";
 		primeInt = 99;
@@ -243,7 +276,7 @@ public class DialogueScene3b : MonoBehaviour {
 		Char1name.text = ""; 
 		Char1speech.text = ""; 
 		Char2name.text = "YOU"; 
-		Char2speech.text = "I’ll have the… ‘Blue Moon Styx Bubble Tea.’";
+		Char2speech.text = "Oops. I left mine at home.";
 		Char3name.text = "";
 		Char3speech.text = "";
 		primeInt = 199;
@@ -253,11 +286,12 @@ public class DialogueScene3b : MonoBehaviour {
 		allowSpace = true;
 	}
 
-	public void SceneChange3c(){
-		SceneManager.LoadScene("Scene3c");
+	public void SceneChange3d(){
+		SceneManager.LoadScene("Scene3d");
 	} 
-	public void SceneChange2b(){ 
-		SceneManager.LoadScene("Scene2b");
+	public void SceneChange3e(){ 
+		SceneManager.LoadScene("Scene3e");
 	}
 }
+
 
