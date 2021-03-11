@@ -312,7 +312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 414, y: -321.3}
+  m_AnchoredPosition: {x: 443, y: -316}
   m_SizeDelta: {x: 160, y: 39.388718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &193156825
@@ -2272,21 +2272,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2041419550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83d911f39d296d440a2be0dd012aa104, type: 3}
+  m_Script: {fileID: 11500000, guid: b34c7f72c6ddc164fa63c2fed716b25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
-  Char1name: {fileID: 1294215102}
-  Char1speech: {fileID: 1578926034}
-  Char2name: {fileID: 1645133870}
-  Char2speech: {fileID: 1769248564}
-  Char3name: {fileID: 566082410}
-  Char3speech: {fileID: 1400435619}
-  dialogue: {fileID: 1417209498}
-  ArtChar1: {fileID: 496616645}
-  ArtBG1: {fileID: 1600518546}
-  Choice1a: {fileID: 483383172}
-  Choice1b: {fileID: 1695729167}
-  NextScene1Button: {fileID: 1517978108}
-  NextScene2Button: {fileID: 799466812}
-  nextButton: {fileID: 193156823}
+  Char1name: {fileID: 0}
+  Char1speech: {fileID: 0}
+  Char2name: {fileID: 0}
+  Char2speech: {fileID: 0}
+  Char3name: {fileID: 0}
+  Char3speech: {fileID: 0}
+  dialogue: {fileID: 0}
+  ArtChar1: {fileID: 0}
+  ArtBG1: {fileID: 0}
+  Choice1a: {fileID: 0}
+  Choice1b: {fileID: 0}
+  NextScene1Button: {fileID: 0}
+  NextScene2Button: {fileID: 0}
+  nextButton: {fileID: 0}
