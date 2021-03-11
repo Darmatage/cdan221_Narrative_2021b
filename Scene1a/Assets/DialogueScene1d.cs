@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class DialogueScene1b : MonoBehaviour {
+public class DialogueScene1d : MonoBehaviour {
         public int primeInt = 1; // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -56,70 +56,78 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-         		Char3name.text = "";
-				Char3speech.text = "(You both are walking on the beach, the date feels pretty awkward to start).";
-		}
-		else if (primeInt == 3){
-               ArtChar1.SetActive(true);
-                dialogue.SetActive(true);
-                Char1name.text = "YOU";
-                Char1speech.text = "Do you tend to hang around the beach?";
-                Char2name.text = "";
-                Char2speech.text = "";
-         		Char3name.text = "";
-				Char3speech.text = "";
-		}
-		else if (primeInt == 4){
-               ArtChar1.SetActive(true);
-                dialogue.SetActive(true);
+				Char3name.text = "";
+				Char3speech.text = "(It's getting later in the day, the sun is nearly touching the horizon).";
+        }
+       else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
-                Char2speech.text = "Yeah! Further inland is too dry, makes my scales itch.";
-         		Char3name.text = "";
-				Char3speech.text = "";
-		}		
-		else if (primeInt == 5){
-               ArtChar1.SetActive(true);
-                dialogue.SetActive(true);
-                Char1name.text = "YOU";
-                Char1speech.text = "Oh, that's fair.";
-                Char2name.text = "";
-                Char2speech.text = "";
-         		Char3name.text = "";
-				Char3speech.text = "";
-		}		
-		else if (primeInt == 6){
-               ArtChar1.SetActive(true);
-                dialogue.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-         		Char3name.text = "";
-				Char3speech.text = "(Things get quiet again as you walk).";
-		}		
-       else if (primeInt ==7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Baz";
-                Char2speech.text = "So, is there anything you’d want to do while we’re here? I didn’t plan too far ahead..";
+                Char2speech.text = "Wow, sun's getting pretty low, this date's gone by so fast.";
 				Char3name.text = "";
 				Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
-				// Turn off "Next" button, turn on "Choice" buttons
+        }
+       else if (primeInt == 4){
+                Char1name.text = "YOU";
+                Char1speech.text = "Guess time does fly when you're having fun.";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+       else if (primeInt == 5){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "(Baz blushes, flattered by your comment).";
+                //gameHandler.AddPlayerStat(1);
+        }
+       else if (primeInt == 6){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Baz";
+                Char2speech.text = "Well I'm glad you're enjoying it. My other dates never seem to like my date spots.";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+       else if (primeInt ==7){
+                Char1name.text = "YOU";
+                Char1speech.text = "Who wouldn't like the beach?";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+        }
+		else if (primeInt == 8){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Baz";
+                Char2speech.text = "I know, right! Isn't the water awesome?";
+				Char3name.text = "";
+				Char3speech.text = "";
+		}		
+       else if (primeInt == 9){
+                Char1name.text = "YOU";
+                Char1speech.text = "Yeah..";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+				Char3speech.text = "";
+                // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
-
-		}
+        }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
-                Char2speech.text = "Oh, uh, maybe some other time...";
+                Char2speech.text = "Right...I've swallowed a few coins.";
 				Char3name.text = "";
 				Char3speech.text = "";
         }
@@ -129,17 +137,17 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
-				Char3speech.text = "(Baz looks away, clearly uncomfortable).";
-                nextButton.SetActive(true);
-                allowSpace = true;
-                nextButton.SetActive(true);
+				Char3speech.text = "(Baz seems uncomfortable. This might be a touchy subject).";
+                nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene1Button.SetActive(true);
         }
 
        else if (primeInt == 200){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
-                Char2speech.text = "Sure! Try not to hit my friends, though.";
+                Char2speech.text = "Y-yeah, like fish scales.";
 				Char3name.text = "";
 				Char3speech.text = "";
         }
@@ -149,42 +157,41 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
-				Char3speech.text = "(You both skip stones over the water).";
-                nextButton.SetActive(true);
-                allowSpace = true;
-                nextButton.SetActive(true);
-		}
-	}
-	
+				Char3speech.text = "(Baz blushes, happy you appreciate his scaly appearance).";
+                nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene2Button.SetActive(true);
+        }
+     }
+
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Wanna go fishing?";
+                Char1name.text = "YOU";
+                Char1speech.text = "It's like shimmering coins.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 primeInt = 99;
-                Choice1a.SetActive(true);
-                Choice1b.SetActive(true);
-                nextButton.SetActive(false);
-                allowSpace = false;
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char3name.text = "";
-				Char3speech.text = "";
-				Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Maybe we can skip rocks? I'm pretty good.";
+                Char1name.text = "YOU";
+                Char1speech.text = "It's like shimmering fish scales.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 primeInt = 199;
-                Choice1a.SetActive(true);
-                Choice1b.SetActive(true);
-                nextButton.SetActive(false);
-                allowSpace = false;
-		}
-	        public void SceneChange1(){
-               SceneManager.LoadScene("Scene1c");
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+
+        public void SceneChange1(){
+               SceneManager.LoadScene("Scene2a");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene1c");
+                SceneManager.LoadScene("Scene2b");
         }
-	}
+}

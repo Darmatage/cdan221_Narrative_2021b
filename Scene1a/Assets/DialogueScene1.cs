@@ -195,6 +195,9 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Yeah, I guess you're right..";
                 Char2name.text = "";
                 Char2speech.text = "";
+				nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene1Button.SetActive(true);
         }
 
        else if (primeInt == 200){
@@ -219,7 +222,10 @@ public void talking(){         // main story function. Players hit next to progr
 				Char1name.text = "You";
                 Char1speech.text = "Yeah, it will!";
                 Char2name.text = "";
-                Char2speech.text = "";		
+                Char2speech.text = "";
+				nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene1Button.SetActive(true);
                
         }
      }
@@ -251,9 +257,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange2a(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene1b");
         }
         public void SceneChange2b(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene1b");
         }
 }
