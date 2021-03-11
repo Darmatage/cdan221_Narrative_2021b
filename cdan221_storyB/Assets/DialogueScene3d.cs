@@ -17,6 +17,7 @@ public class DialogueScene3d : MonoBehaviour {
 	public GameObject ArtChar1a; 
 	public GameObject ArtChar1b; 
 	public GameObject ArtChar1c; 
+	public GameObject ArtChar1d; 
 	public GameObject ArtChar4a; 
 	public GameObject ArtChar4b;
 	public GameObject ArtChar4c;
@@ -37,10 +38,11 @@ public class DialogueScene3d : MonoBehaviour {
 		ArtChar1a.SetActive(false); 
 		ArtChar1b.SetActive(false);
 		ArtChar1c.SetActive(false);
-		ArtChar3a.SetActive(false);
-		ArtChar3b.SetActive(false);
-		ArtChar3c.SetActive(false);
-		ArtChar3d.SetActive(false);
+		ArtChar1d.SetActive(false);
+		ArtChar4a.SetActive(false);
+		ArtChar4b.SetActive(false);
+		ArtChar4c.SetActive(false);
+		ArtChar4d.SetActive(false);
 		ArtBG1.SetActive(true);
 		ArtBG2.SetActive(false);
 		Choice1a.SetActive(false);
@@ -64,80 +66,86 @@ public class DialogueScene3d : MonoBehaviour {
 			// AudioSource.Play();
 		}
 		else if (primeInt == 2){ 
-			ArtChar1a.SetActive(true);
+			ArtChar4a.SetActive(true);
 			dialogue.SetActive(true); 
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "(Did somebody just... jump through the window?! What's going on?!)";
+			Char2speech.text = "(Before I could process what was happening, a strangely-dressed human girl came crashing through the window.)";
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
 		else if (primeInt ==3){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = ""; 
-			Char2speech.text = "";
-			Char3name.text = "HUMAN GIRL";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "What the hell?! There's a door right there, lady!";
+			Char3name.text = "";
 			Char3speech.text = "";
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 4){
-			ArtChar1a.SetActive(false);
-			ArtChar1b.SetActive(true);
+			ArtChar4a.SetActive(false);
+			ArtChar4b.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = "";
-			Char3name.text = "";
-			Char3speech.text = "";
+			Char3name.text = "???";
+			Char3speech.text = "QUIET, WORM! And don't call me 'lady!'";
 		}
 		else if (primeInt == 5){
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
-			Char3name.text = "";
-			Char3speech.text = "";
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "You will ONLY address me as KAITLYN, THE WORLD’S GREATEST (and cutest) MONSTER HUNTER.";
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 6){
-			ArtChar1a.SetActive(true);
-			ArtChar1b.SetActive(false);
-			Char1name.text = ""; 
-			Char1speech.text = "";
+			ArtChar1b.SetActive(true);
+			ArtChar4b.SetActive(false);
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "Hey! Hellloooo! I don’t know if you’ve noticed, but you’re kind of crashing my date! Kill me another day!";
 			Char2name.text = ""; 
 			Char2speech.text = "";
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
 			else if (primeInt == 7){
+			ArtChar1b.SetActive(false);
+			ArtChar4b.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
-			Char3name.text = "";
-			Char3speech.text = "";
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "Huh?! You two mind your own business! I’m here to hunt werewolves!";
 		}
 		else if (primeInt == 8){
+			ArtChar4b.SetActive(false);
+			ArtChar4c.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
-			Char3name.text = "";
-			Char3speech.text = "";
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "These idiots thought they could get away with being hipsters AND furries?! How cringe could you possibly be?! DIE!";
 		}
 		else if (primeInt == 9){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = ""; 
-			Char2speech.text = ""; 
+			Char2name.text = "YOU"; 
+			Char2speech.text = "?! Everyone, look out--"; 
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
 		else if (primeInt == 10){
-			Char1name.text = ""; 
-			Char1speech.text = "";
+			ArtChar4c.SetActive(false);
+			ArtChar1a.SetActive(true);
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "And I oop-";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
@@ -145,11 +153,57 @@ public class DialogueScene3d : MonoBehaviour {
 		}
 		else if (primeInt == 11){
 			ArtChar1a.SetActive(false);
-			ArtChar1b.SetActive(true);
+			ArtChar4b.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "...............";
+		}
+		else if (primeInt == 12){
+			ArtChar1a.SetActive(false);
+			ArtChar4b.SetActive(true);
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "What did you just say?";
+		}
+		else if (primeInt == 13){
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "DID SHE SERIOUSLY JUST SAY THAT? IN 2021? WHAT KIND OF OUTDATED SATIRE IS THIS?!";
+		}
+		else if (primeInt == 14){
+			ArtChar4b.SetActive(false);
+			ArtChar4c.SetActive(true);
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "It’s decided, then. She’ll die too! Everyone at home, be sure to leave a like and subscribe if you think this demon deserved her bloody demise. Are you ready?";
+		}
+		else if (primeInt == 15){
+			ArtChar4c.SetActive(false);
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "(Oh, god. Is she seriously going to kill Natas’sha?!)"; 
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 16){
+			ArtChar4c.SetActive(false);
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "(I have to do something!)"; 
 			Char3name.text = "";
 			Char3speech.text = "";
 			Choice1a.SetActive(true); // function Choice1aFunct()
@@ -157,60 +211,61 @@ public class DialogueScene3d : MonoBehaviour {
 		}
 		// ENCOUNTER AFTER CHOICE #1
 		else if (primeInt == 100){
+			ArtChar4d.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
-			Char3name.text = "";
-			Char3speech.text = "";
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "H..Huh...?";
 		} 
 		else if (primeInt == 101){ 
-			ArtChar1b.SetActive(false);
-			ArtChar1c.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
-			Char2speech.text = ".";
-			Char3name.text = "";
-			Char3speech.text = "";
+			Char2speech.text = "";
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "H-Hey. What the hell? I thought you were a normal… human? Mortal? Whatever...";
 		}
 		else if (primeInt == 102){
+			ArtChar4d.SetActive(false);
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = ""; 
-			Char2speech.text = ""; 
+			Char2name.text = "YOU"; 
+			Char2speech.text = "Just because I’m normal doesn’t mean I won’t protect my… my, um… "; 
 			Char3name.text = "";
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 103){
+			ArtChar4d.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
-			Char3name.text = "";
-			Char3speech.text = "";
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "OH, KNOCK IT OFF! Don’t be cute! It makes me nauseous! It makes me want to…!";
 		} 
 		else if (primeInt == 104){
 			Char1name.text = ""; 
 			Char1speech.text = "";
-			Char2name.text = "YOU"; 
-			Char2speech.text = "But isn’t the majority of environmental problems the direct result of large companies? I don’t think just ditching plastic straws is an effective solution..."; 
-			Char3name.text = "";
-			Char3speech.text = "";
-		} 
-		else if (primeInt == 105){
-			Char1name.text = "Natas’sha"; 
-			Char1speech.text = "LARGE COMPANIES ARE THE GREATEST BREEDING GROUND FOR DAMNED SOULS. THAT’S FOOD FOR DEMONS! THAT’S GOOD FOR THE ENVIRONMENT!!";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
-			Char3name.text = "";
-			Char3speech.text = "";
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "Want to....";
+		} 
+		else if (primeInt == 105){
+			ArtChar4d.SetActive(false);
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "(THWUMP.)";
 		}
 		else if (primeInt == 106){
-			ArtChar1b.SetActive(true);
-			ArtChar1c.SetActive(false);
+			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas’sha"; 
-			Char1speech.text = "Ugh! You mortals can be so ignorant. You're lucky that I have extras.";
+			Char1speech.text = "Wow. You did that.";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
@@ -220,7 +275,25 @@ public class DialogueScene3d : MonoBehaviour {
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "...Sorry. Thanks."; 
+			Char2speech.text = "Y-Yeah, I guess I.. Oh no. Oh no, that was crazy of me."; 
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 108){
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "No, no! That was sooo sweet of you! I mean, you didn’t need to at all. A silver bullet won’t kill a demon like me. But…";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 108){
+			ArtChar1a.SetActive(false);
+			ArtChar1d.SetActive(true);
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "I'm glad you did. Thanks.";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
 			Char3name.text = "";
 			Char3speech.text = "";
 			nextButton.SetActive(false); 
@@ -229,39 +302,51 @@ public class DialogueScene3d : MonoBehaviour {
 		} 
 
 		else if (primeInt == 200){
-			ArtChar1a.SetActive(true);
-			Char1name.text = "Natas'sha"; 
-			Char1speech.text = "Really?";
-			Char2name.text = ""; 
-			Char2speech.text = ""; 
+			ArtChar1a.SetActive(false);
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = "YOU"; 
+			Char2speech.text = "(I begin to cough blood. jesus christ I'm fucking dying)"; 
 			Char3name.text = "";
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 201){ 
-			Char1name.text = ""; 
-			Char1speech.text = "";
-			Char2name.text = "YOU"; 
-			Char2speech.text = "Yeah, sorry.. I was super in a rush to get out here today.";
+			ArtChar1b.SetActive(true);
+			Char1name.text = "Natas’sha"; 
+			Char1speech.text = "Why did you do that?! I would have been fine! Get up! Hey-!!";
+			Char2name.text = ""; 
+			Char2speech.text = "";
 			Char3name.text = "";
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 202){
-			ArtChar1b.SetActive(false);
-			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas'sha"; 
-			Char1speech.text = "Aww. Too excited to see me, huh?";
+			Char1speech.text = "....Ugh, this is just my luck. I have to clean up ANOTHER date's corpse.";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 203){
-			Char1name.text = "Natas'sha"; 
-			Char1speech.text = "Well, you’re in luck. I always carry extra straws with me.";
+			ArtChar1b.SetActive(false);
+			ArtChar4a.SetActive(true);
+			Char1name.text = ""; 
+			Char1speech.text = "";
+			Char2name.text = ""; 
+			Char2speech.text = ""; 
+			Char3name.text = "Kaitlyn";
+			Char3speech.text = "What a dunce. Just because silver bullets aren't made to kill mortals, doesn't mean they CAN'T.";
+		} 
+		else if (primeInt == 204){
+			ArtChar4a.SetActive(false);
+			ArtBG1.SetActive(false);
+			ArtBG2.SetActive(true);
+			Char1name.text = ""; 
+			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
-			Char3speech.text = "";
+			Char3speech.text = "YOU GOT A BAD END! (Cheer up, you worm! it's good for views!)";
 			nextButton.SetActive(false); 
 			allowSpace = false; 
 			NextScene2Button.SetActive(true);
@@ -273,7 +358,7 @@ public class DialogueScene3d : MonoBehaviour {
 		Char1name.text = ""; 
 		Char1speech.text = "";
 		Char2name.text = "YOU"; 
-		Char2speech.text = "Oops. Was I supposed to?";
+		Char2speech.text = "(There's no time to think! I grab a knife from the neighboring table and plunge it into Kaitlyn's chest.";
 		Char3name.text = "";
 		Char3speech.text = "";
 		primeInt = 99;
@@ -286,7 +371,7 @@ public class DialogueScene3d : MonoBehaviour {
 		Char1name.text = ""; 
 		Char1speech.text = ""; 
 		Char2name.text = "YOU"; 
-		Char2speech.text = "Oops. I left mine at home.";
+		Char2speech.text = "HRRGHH--";
 		Char3name.text = "";
 		Char3speech.text = "";
 		primeInt = 199;
@@ -296,11 +381,11 @@ public class DialogueScene3d : MonoBehaviour {
 		allowSpace = true;
 	}
 
-	public void SceneChange3d(){
-		SceneManager.LoadScene("Scene3d");
-	} 
-	public void SceneChange3e(){ 
+	public void SceneChange3e(){
 		SceneManager.LoadScene("Scene3e");
+	} 
+	public void SceneChange1(){ 
+		SceneManager.LoadScene("Scene1");
 	}
 }
 
