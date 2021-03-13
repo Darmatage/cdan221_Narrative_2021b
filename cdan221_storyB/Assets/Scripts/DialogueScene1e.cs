@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class DialogueScene1d : MonoBehaviour {
+public class DialogueScene1e : MonoBehaviour {
         public int primeInt = 1; // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -57,20 +57,20 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
-				Char3speech.text = "(It's getting later in the day, the sun is nearly touching the horizon).";
+				Char3speech.text = "(It's getting pretty late, you both start to reach the end of the beach).";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
-                Char2speech.text = "Wow, sun's getting pretty low, this date's gone by so fast.";
+                Char2speech.text = "It's getting late, we should probably wrap this up.";
 				Char3name.text = "";
 				Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
                 Char1name.text = "YOU";
-                Char1speech.text = "Guess time does fly when you're having fun.";
+                Char1speech.text = "Yeah, I'm pretty tired. Though this was fun!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -79,23 +79,23 @@ public void talking(){         // main story function. Players hit next to progr
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Baz";
+                Char2speech.text = "Really? I think it was too! I'm glad you've had fun.";
 				Char3name.text = "";
-				Char3speech.text = "(Baz blushes, flattered by your comment).";
+				Char3speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Baz";
-                Char2speech.text = "Well I'm glad you're enjoying it. My other dates never seem to like my date spots.";
+                Char2name.text = "";
+                Char2speech.text = "";
 				Char3name.text = "";
-				Char3speech.text = "";
+				Char3speech.text = "(He seems pretty bummed that the date was ending).";
         }
        else if (primeInt ==7){
                 Char1name.text = "YOU";
-                Char1speech.text = "Who wouldn't like the beach?";
+                Char1speech.text = "Maybe we can plan another date?";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -105,13 +105,13 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
-                Char2speech.text = "I know, right! Isn't the water awesome?";
+                Char2speech.text = "Yeah! Where would you wanna go?";
 				Char3name.text = "";
 				Char3speech.text = "";
 		}		
        else if (primeInt == 9){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah..";
+                Char1speech.text = "Uh...";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -127,17 +127,17 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
-                Char2speech.text = "Right...I've swallowed a few coins.";
+                Char2speech.text = "Sure! Like seaweed, right?";
 				Char3name.text = "";
 				Char3speech.text = "";
         }
        else if (primeInt == 101){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "YOU";
+                Char1speech.text = "Oh, uh, yeah. Seaweed..";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
-				Char3speech.text = "(Baz seems uncomfortable. This might be a touchy subject).";
+				Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
@@ -147,7 +147,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
-                Char2speech.text = "Y-yeah, like fish scales.";
+                Char2speech.text = "Freshwater? I'm not a huge fan..";
 				Char3name.text = "";
 				Char3speech.text = "";
         }
@@ -157,7 +157,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
-				Char3speech.text = "(Baz blushes, happy you appreciate his scaly appearance).";
+				Char3speech.text = "(He's a sea bass, duh).";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
@@ -167,7 +167,7 @@ public void talking(){         // main story function. Players hit next to progr
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "It's like shimmering coins.";
+                Char1speech.text = "Maybe we could get seafood?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 99;
@@ -178,7 +178,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "It's like shimmering fish scales.";
+                Char1speech.text = "A walk on the lake instead?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 199;

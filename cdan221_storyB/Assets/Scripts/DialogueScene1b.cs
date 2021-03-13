@@ -130,9 +130,9 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 				Char3name.text = "";
 				Char3speech.text = "(Baz looks away, clearly uncomfortable).";
-                nextButton.SetActive(true);
-                allowSpace = true;
-                nextButton.SetActive(true);
+                nextButton.SetActive(false);
+                allowSpace = false;
+				NextScene1Button.SetActive(true);
         }
 
        else if (primeInt == 200){
@@ -150,9 +150,9 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
 				Char3name.text = "";
 				Char3speech.text = "(You both skip stones over the water).";
-                nextButton.SetActive(true);
-                allowSpace = true;
-                nextButton.SetActive(true);
+                nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene2Button.SetActive(true);
 		}
 	}
 	
@@ -163,10 +163,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "You";
                 Char2speech.text = "Wanna go fishing?";
                 primeInt = 99;
-                Choice1a.SetActive(true);
-                Choice1b.SetActive(true);
-                nextButton.SetActive(false);
-                allowSpace = false;
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
         }
         public void Choice1bFunct(){
                 Char3name.text = "";
@@ -176,10 +176,10 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "You";
                 Char2speech.text = "Maybe we can skip rocks? I'm pretty good.";
                 primeInt = 199;
-                Choice1a.SetActive(true);
-                Choice1b.SetActive(true);
-                nextButton.SetActive(false);
-                allowSpace = false;
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
 		}
 	        public void SceneChange1(){
                SceneManager.LoadScene("Scene1c");
