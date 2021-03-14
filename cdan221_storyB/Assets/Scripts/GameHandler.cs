@@ -8,9 +8,13 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour{
 
         public static int playerStat;
+		public static bool gotBaz;
+		public static bool gotYOU;
+		public GameObject youGotBaz;
+		public GameObject youGotYOU;
+		
+		
         //public GameObject textGameObject;
-		
-		
 		
 		public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
@@ -31,6 +35,8 @@ public class GameHandler : MonoBehaviour{
 
         void Start(){
                 pauseMenuUI.SetActive(false);
+				youGotBaz.SetActive(false);
+				youGotYOU.SetActive(false);
         }
 
         void Update(){
@@ -43,7 +49,24 @@ public class GameHandler : MonoBehaviour{
                         }
                 }
         }
-
+		
+		public void UpdateBaz(bool isBaz){
+			gotBaz = isBaz;
+			if (isBaz == true){
+			youGotBaz.SetActive(true);}
+			else{youGotBaz.SetActive(false);}
+		}
+		
+		public void UpdateYOU(bool isYOU){
+			gotYOU = isYOU;
+			if (isYOU == true){
+			youGotYOU.SetActive(true);}
+			else{youGotYOU.SetActive(false);}
+		}
+		
+		
+		
+		
         void Pause(){
                 pauseMenuUI.SetActive(true);
                 Time.timeScale = 0f;
@@ -79,7 +102,7 @@ SceneManager.LoadScene ("MainMenu");
         //        scoreTemp.text = "Score: " + score; }
 
         public void StartGame(){
-                SceneManager.LoadScene("Scene1");
+                SceneManager.LoadScene("Scene0");
         }
 
         public void QuitGame(){
