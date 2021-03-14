@@ -8,8 +8,8 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour{
 
         public static int playerStat;
-		public static bool gotBaz;
-		public static bool gotYOU;
+		public static bool gotBaz = false;
+		public static bool gotYOU = false;
 		public GameObject youGotBaz;
 		public GameObject youGotYOU;
 		
@@ -35,8 +35,8 @@ public class GameHandler : MonoBehaviour{
 
         void Start(){
                 pauseMenuUI.SetActive(false);
-				youGotBaz.SetActive(false);
-				youGotYOU.SetActive(false);
+				UpdateBaz(gotBaz);
+				UpdateYOU(gotYOU);
         }
 
         void Update(){
