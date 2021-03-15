@@ -346,7 +346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &290168399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2281,8 +2281,12 @@ MonoBehaviour:
   Char2speech: {fileID: 0}
   Char3name: {fileID: 0}
   Char3speech: {fileID: 0}
+  Char4name: {fileID: 0}
+  Char4speech: {fileID: 0}
   dialogue: {fileID: 290168398}
   ArtChar1: {fileID: 1505742377}
+  ArtChar2: {fileID: 0}
+  ArtChar3: {fileID: 0}
   ArtBG1: {fileID: 2001328324}
   Choice1a: {fileID: 875039280}
   Choice1b: {fileID: 1722985423}

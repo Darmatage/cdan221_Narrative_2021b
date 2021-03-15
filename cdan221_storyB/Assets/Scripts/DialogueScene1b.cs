@@ -162,7 +162,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Wanna go fishing?";
-				gameHandlerObj.UpdateBaz(false);
+				gameHandlerObj.UpdateDateScore("Baz", -1);
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -176,7 +176,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Maybe we can skip rocks? I'm pretty good.";
-				gameHandlerObj.UpdateBaz(true);
+				gameHandlerObj.UpdateDateScore("Baz", 1);
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);

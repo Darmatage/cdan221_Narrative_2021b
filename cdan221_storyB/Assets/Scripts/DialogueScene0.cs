@@ -13,8 +13,12 @@ public class DialogueScene0 : MonoBehaviour {
         public Text Char2speech;
         public Text Char3name;
         public Text Char3speech;
+		public Text Char4name;
+		public Text Char4speech;
         public GameObject dialogue;
         public GameObject ArtChar1;
+		public GameObject ArtChar2;
+		public GameObject ArtChar3;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -30,6 +34,8 @@ public class DialogueScene0 : MonoBehaviour {
 void Start(){         // initial visibility settings
         dialogue.SetActive(true);
         ArtChar1.SetActive(false);
+		ArtChar2.SetActive(false);
+		ArtChar3.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -154,9 +160,10 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = false;
                 NextScene3Button.SetActive(true);
      }
+}
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
-        void Choice1aFunct(){
+        public void Choice1aFunct(){
                 Char1name.text = "YOU";
                 Char1speech.text = "Different...";
                 Char2name.text = "";
@@ -169,7 +176,7 @@ public void talking(){         // main story function. Players hit next to progr
 				dialogue.SetActive(true);
                 allowSpace = true;
         }
-        void Choice1bFunct(){
+        public void Choice1bFunct(){
                 Char1name.text = "YOU";
                 Char1speech.text = "Hm...Interesting";
                 Char2name.text = "";
@@ -181,7 +188,7 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-		void Choice1cFunct(){
+		public void Choice1cFunct(){
                 Char1name.text = "YOU";
                 Char1speech.text = "Ok...";
                 Char2name.text = "";
@@ -194,11 +201,13 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
 
-        void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+        public void SceneChange1(){
+               SceneManager.LoadScene("Scene1a");
         }
-        void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+        public void SceneChange2(){
+                SceneManager.LoadScene("Scene2a");
+        }
+		public void SceneChange3(){
+                SceneManager.LoadScene("Scene3a");
         }
 	}
-}

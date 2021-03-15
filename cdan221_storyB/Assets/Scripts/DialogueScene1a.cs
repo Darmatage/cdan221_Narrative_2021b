@@ -21,7 +21,7 @@ public class DialogueScene1a : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
-       //public GameObject gameHandler;
+        public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -165,6 +165,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Um...";
                 Char2name.text = "";
                 Char2speech.text = "";
+				//gameHandler.AddPlayerStat(1);
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -255,8 +256,7 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-
-        public void SceneChange2a(){
+			public void SceneChange2a(){
                SceneManager.LoadScene("Scene1b");
         }
         public void SceneChange2b(){

@@ -7,14 +7,12 @@ using UnityEngine.Audio;
 
 public class GameHandler : MonoBehaviour{
 
-        public static int playerStat;
-		public static bool gotBaz = false;
-		public static bool gotYOU = false;
-		public GameObject youGotBaz;
-		public GameObject youGotYOU;
+		public static int dateBaz = 0;
+		public static int dateNat = 0;
+		public static int dateJett = 0;
+		//public GameObject textDateScore;
 		
-		
-        //public GameObject textGameObject;
+
 		
 		public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
@@ -22,7 +20,7 @@ public class GameHandler : MonoBehaviour{
         public static float volumeLevel = 1.0f;
         private Slider sliderVolumeCtrl;
 
-        //void Start () { UpdateScore (); }
+
 
        void Awake(){
                 SetLevel (volumeLevel);
@@ -35,8 +33,9 @@ public class GameHandler : MonoBehaviour{
 
         void Start(){
                 pauseMenuUI.SetActive(false);
-				UpdateBaz(gotBaz);
-				UpdateYOU(gotYOU);
+				UpdateDateScore("Baz", dateBaz);
+				UpdateDateScore("Nat", dateNat);
+				UpdateDateScore("Jett", dateJett);
         }
 
         void Update(){
@@ -50,19 +49,34 @@ public class GameHandler : MonoBehaviour{
                 }
         }
 		
-		public void UpdateBaz(bool isBaz){
-			gotBaz = isBaz;
-			if (isBaz == true){
-			youGotBaz.SetActive(true);}
-			else{youGotBaz.SetActive(false);}
+		public void UpdateDateScore(string dateName, int score){
+			if (dateName == "Baz"){
+				dateBaz += score;
+				Debug.Log("Current Baz Stat = " + dateBaz);
+			}
+			else if (dateName == "Nat"){
+				dateNat += score;
+				Debug.Log("Current Nat Stat = " + dateNat);
+			}
+			else if (dateName == "Jett"){
+				dateJett += score;
+				Debug.Log("Current Jett Stat = " + dateJett);
+			}
 		}
 		
-		public void UpdateYOU(bool isYOU){
-			gotYOU = isYOU;
-			if (isYOU == true){
-			youGotYOU.SetActive(true);}
-			else{youGotYOU.SetActive(false);}
-		}
+		public int WhatIsDateScore(string dateName){
+                if (dateName == "Baz"){
+				return dateBaz;
+			}
+			else if (dateName == "Nat"){
+				return dateNat;
+			}
+			else if (dateName == "Jett"){
+				return dateJett;
+			}else{return 0;}
+				
+        }
+		
 		
 		
 		
@@ -91,11 +105,7 @@ SceneManager.LoadScene ("MainMenu");
                 volumeLevel = sliderValue;
         }
 
-        public void AddPlayerStat(int amount){
-                playerStat += amount;
-                Debug.Log("Current Player Stat = " + playerStat);
-        //      UpdateScore ();
-        }
+ 
 
         //void UpdateScore () {
         //        Text scoreTemp = textGameObject.GetComponent<Text>();
