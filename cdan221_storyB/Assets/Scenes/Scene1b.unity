@@ -2805,5 +2805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DateInventory
       objectReference: {fileID: 0}
+    - target: {fileID: 5410559716572024447, guid: 325f51d3f9c0aac48a9394ef6db914d9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 325f51d3f9c0aac48a9394ef6db914d9, type: 3}

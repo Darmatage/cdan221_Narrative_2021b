@@ -191,6 +191,6 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene1PathEnd");
+               SceneManager.LoadScene("ScenePath1End");
         }
 	}

@@ -31,7 +31,7 @@ void Start(){         // initial visibility settings
         endBad.SetActive(false);
         nextButton.SetActive(true);
 		
-		 if (gHandler.WhatIsDateScore("Baz")<= 0 ){
+		 if (gHandler.WhatIsDateScore("Baz") <= 0 ){
                        ArtBG1.SetActive(true);
 					   ArtBG2.SetActive(false);
 					   primeInt = 1;         //so that hitting [NEXT] goes to primeInt = 2!
@@ -100,6 +100,56 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Why do you think I know anything?";
         }
        else if (primeInt == 8){
+                Char1name.text = "Jeda";
+                Char1speech.text = "Do not play the stupid. You will take me to him.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                // Turn off "Next" button, turn on "Choice" buttons
+                nextButton.SetActive(false);
+                allowSpace = false;
+				endBad.SetActive(true);
+        }
+		else if (primeInt == 20){
+               ArtChar1a.SetActive(true);
+                dialogue.SetActive(true);
+                Char1name.text = "Jeda";
+                Char1speech.text = "Wakey wakey, human.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt ==21){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "You";
+                Char2speech.text = "Wuh..? What happened?";
+                //gameHandler.AddPlayerStat(1);
+        }
+       else if (primeInt == 22){
+                Char1name.text = "Jeda";
+                Char1speech.text = "I know I did not hit you that hard.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 23){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "You";
+                Char2speech.text = "Hit me? Why?";
+                //gameHandler.AddPlayerStat(1);
+        }
+       else if (primeInt == 24){
+                Char1name.text = "Jeda";
+                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt ==25){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "You";
+                Char2speech.text = "Why do you think I know anything?";
+        }
+       else if (primeInt == 26){
                 Char1name.text = "Jeda";
                 Char1speech.text = "Do not play the stupid. You will take me to him.";
                 Char2name.text = "";
