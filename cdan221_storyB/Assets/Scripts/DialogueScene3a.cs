@@ -21,7 +21,7 @@ public class DialogueScene3a : MonoBehaviour {
 	public GameObject NextScene1Button;
 	public GameObject NextScene2Button; 
 	public GameObject nextButton; 
-	//public GameObject gameHandler; 
+	public GameHandler gameHandlerObj; 
 	//public AudioSource audioSource; 
 	private bool allowSpace = true; 
 
@@ -170,6 +170,7 @@ public class DialogueScene3a : MonoBehaviour {
 		Char1speech.text = "";
 		Char2name.text = "YOU"; 
 		Char2speech.text = "You look pretty different than your photo. I mean, no red skin and fire and all..";
+		gameHandlerObj.UpdateDateScore("Natas'sha", 1);
 		primeInt = 99;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -181,6 +182,7 @@ public class DialogueScene3a : MonoBehaviour {
 		Char1speech.text = ""; 
 		Char2name.text = "YOU"; 
 		Char2speech.text = "You seem really cute too.";
+		gameHandlerObj.UpdateDateScore("Natas'sha", -1);
 		primeInt = 199;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);

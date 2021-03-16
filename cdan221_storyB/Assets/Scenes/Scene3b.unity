@@ -1963,6 +1963,7 @@ MonoBehaviour:
   NextScene1Button: {fileID: 35273084}
   NextScene2Button: {fileID: 1721228623}
   nextButton: {fileID: 1071203552}
+  gameHandlerObj: {fileID: 1813064707}
 --- !u!1001 &1676844123
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -29,8 +29,8 @@ public class DialogueScene3d : MonoBehaviour {
 	public GameObject NextScene1Button;
 	public GameObject NextScene2Button; 
 	public GameObject nextButton; 
-	//public GameObject gameHandler; 
-	//public AudioSource audioSource; 
+	public GameHandler gameHandlerObj; 
+	public AudioSource audioSource; 
 	private bool allowSpace = true; 
 
 	void Start(){ // initial visibility settings
@@ -338,6 +338,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char3speech.text = "What a dunce. Just because silver bullets aren't made to kill mortals, doesn't mean they CAN'T.";
 		} 
 		else if (primeInt == 204){
+			dialogue.SetActive(false);
 			ArtChar4a.SetActive(false);
 			ArtBG1.SetActive(false);
 			ArtBG2.SetActive(true);
@@ -346,7 +347,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
-			Char3speech.text = "YOU GOT A BAD END! (Cheer up, you worm! it's good for views!)";
+			Char3speech.text = "";
 			nextButton.SetActive(false); 
 			allowSpace = false; 
 			NextScene2Button.SetActive(true);
@@ -361,6 +362,7 @@ public class DialogueScene3d : MonoBehaviour {
 		Char2speech.text = "(There's no time to think! I grab a knife from the neighboring table.)";
 		Char3name.text = "";
 		Char3speech.text = "";
+		gameHandlerObj.UpdateDateScore("Natas'sha", 1);
 		primeInt = 99;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -374,6 +376,7 @@ public class DialogueScene3d : MonoBehaviour {
 		Char2speech.text = "HRRGHH--";
 		Char3name.text = "";
 		Char3speech.text = "";
+		gameHandlerObj.UpdateDateScore("Natas'sha", -1);
 		primeInt = 199;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -385,7 +388,7 @@ public class DialogueScene3d : MonoBehaviour {
 		SceneManager.LoadScene("Scene3e");
 	} 
 	public void SceneChange1(){ 
-		SceneManager.LoadScene("Scene1");
+		SceneManager.LoadScene("MainMenu");
 	}
 }
 

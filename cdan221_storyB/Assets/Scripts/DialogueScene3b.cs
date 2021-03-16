@@ -22,7 +22,7 @@ public class DialogueScene3b : MonoBehaviour {
 	public GameObject NextScene1Button;
 	public GameObject NextScene2Button; 
 	public GameObject nextButton; 
-	//public GameObject gameHandler; 
+	public GameHandler gameHandlerObj; 
 	//public AudioSource audioSource; 
 	private bool allowSpace = true; 
 
@@ -233,6 +233,7 @@ public class DialogueScene3b : MonoBehaviour {
 		Char2speech.text = "I’ll have the… ‘Midnight Mocha Frappuccino.’";
 		Char3name.text = "";
 		Char3speech.text = "";
+		gameHandlerObj.UpdateDateScore("Natas'sha", -1);
 		primeInt = 99;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -246,6 +247,7 @@ public class DialogueScene3b : MonoBehaviour {
 		Char2speech.text = "I’ll have the… ‘Blue Moon Styx Bubble Tea.’";
 		Char3name.text = "";
 		Char3speech.text = "";
+		gameHandlerObj.UpdateDateScore("Natas'sha", 1);
 		primeInt = 199;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);

@@ -2405,6 +2405,8 @@ MonoBehaviour:
   NextScene1Button: {fileID: 35273084}
   NextScene2Button: {fileID: 1721228623}
   nextButton: {fileID: 1071203552}
+  gameHandlerObj: {fileID: 731615122}
+  audioSource: {fileID: 0}
 --- !u!1 &1650996532
 GameObject:
   m_ObjectHideFlags: 0

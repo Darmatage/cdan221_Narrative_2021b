@@ -23,8 +23,8 @@ public class DialogueScene3c : MonoBehaviour {
 	public GameObject NextScene1Button;
 	public GameObject NextScene2Button; 
 	public GameObject nextButton; 
-	//public GameObject gameHandler; 
-	//public AudioSource audioSource; 
+	public GameHandler gameHandlerObj; 
+	public AudioSource audioSource; 
 	private bool allowSpace = true; 
 
 	void Start(){ // initial visibility settings
@@ -265,6 +265,7 @@ public class DialogueScene3c : MonoBehaviour {
 		Char2speech.text = "Oops. Was I supposed to?";
 		Char3name.text = "";
 		Char3speech.text = "";
+		gameHandlerObj.UpdateDateScore("Natas'sha", -1);
 		primeInt = 99;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -278,6 +279,7 @@ public class DialogueScene3c : MonoBehaviour {
 		Char2speech.text = "Oops. I left mine at home.";
 		Char3name.text = "";
 		Char3speech.text = "";
+		gameHandlerObj.UpdateDateScore("Natas'sha", 1);
 		primeInt = 199;
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
