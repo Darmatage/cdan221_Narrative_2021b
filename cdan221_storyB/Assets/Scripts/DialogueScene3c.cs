@@ -291,7 +291,7 @@ public class DialogueScene3c : MonoBehaviour {
 		SceneManager.LoadScene("Scene3d");
 	} 
 	public void SceneChange3e(){ 
-		SceneManager.LoadScene("Scene3e");
+		SceneManager.LoadScene("ScenePath3End");
 	}
 }
 

@@ -287,7 +287,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
-		else if (primeInt == 108){
+		else if (primeInt == 109){
 			ArtChar1a.SetActive(false);
 			ArtChar1d.SetActive(true);
 			Char1name.text = "Natas’sha"; 
@@ -385,7 +385,7 @@ public class DialogueScene3d : MonoBehaviour {
 	}
 
 	public void SceneChange3e(){
-		SceneManager.LoadScene("Scene3e");
+		SceneManager.LoadScene("ScenePath3End");
 	} 
 	public void SceneChange1(){ 
 		SceneManager.LoadScene("MainMenu");
