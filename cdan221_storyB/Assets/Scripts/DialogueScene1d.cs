@@ -21,7 +21,7 @@ public class DialogueScene1d : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
-       //public GameObject gameHandler;
+        public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -170,6 +170,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "It's like shimmering coins.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				gameHandlerObj.UpdateDateScore("Baz", -1);
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -181,6 +182,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "It's like shimmering fish scales.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				gameHandlerObj.UpdateDateScore("Baz", 1);
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);

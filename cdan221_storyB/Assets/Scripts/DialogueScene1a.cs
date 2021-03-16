@@ -259,10 +259,10 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-			public void SceneChange1(){
+			public void SceneChange1a(){
                SceneManager.LoadScene("Scene1b");
         }
-        public void SceneChange2(){
+        public void SceneChange2b(){
                 SceneManager.LoadScene("Scene1b");
         }
 	}

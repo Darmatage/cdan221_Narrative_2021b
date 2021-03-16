@@ -1800,7 +1800,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2041419555}
-        m_MethodName: SceneChange2a
+        m_MethodName: SceneChange1a
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2653,4 +2653,4 @@ MonoBehaviour:
   NextScene1Button: {fileID: 1517978108}
   NextScene2Button: {fileID: 799466812}
   nextButton: {fileID: 193156823}
-  gameHandlerObj: {fileID: 0}
+  gameHandlerObj: {fileID: 1599916820}

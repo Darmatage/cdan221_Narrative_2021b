@@ -21,7 +21,7 @@ public class DialogueScene1e : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
-       //public GameObject gameHandler;
+        public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -160,7 +160,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3speech.text = "(He's a sea bass, duh).";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
+                NextScene1Button.SetActive(true);
         }
      }
 
@@ -170,6 +170,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Maybe we could get seafood?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				gameHandlerObj.UpdateDateScore("Baz", 1);
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -181,6 +182,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "A walk on the lake instead?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				gameHandlerObj.UpdateDateScore("Baz", -1);
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -189,9 +191,6 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene1e");
+               SceneManager.LoadScene("Scene1PathEnd");
         }
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene1e");
-        }
-}
+	}
