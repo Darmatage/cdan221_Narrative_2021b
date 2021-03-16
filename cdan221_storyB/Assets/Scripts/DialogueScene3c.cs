@@ -219,7 +219,6 @@ public class DialogueScene3c : MonoBehaviour {
 		} 
 
 		else if (primeInt == 200){
-			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas'sha"; 
 			Char1speech.text = "Really?";
 			Char2name.text = ""; 

@@ -187,7 +187,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "Kaitlyn";
-			Char3speech.text = "It’s decided, then. She’ll die too! Everyone at home, be sure to leave a like and subscribe if you think this demon deserved her bloody demise. Are you ready?";
+			Char3speech.text = "Fine, then. She’ll die too! Everyone at home, be sure to leave a like and subscribe if you think this demon deserved her bloody demise. Are you ready?";
 		}
 		else if (primeInt == 15){
 			ArtChar4c.SetActive(false);
@@ -358,7 +358,7 @@ public class DialogueScene3d : MonoBehaviour {
 		Char1name.text = ""; 
 		Char1speech.text = "";
 		Char2name.text = "YOU"; 
-		Char2speech.text = "(There's no time to think! I grab a knife from the neighboring table and plunge it into Kaitlyn's chest.";
+		Char2speech.text = "(There's no time to think! I grab a knife from the neighboring table.)";
 		Char3name.text = "";
 		Char3speech.text = "";
 		primeInt = 99;

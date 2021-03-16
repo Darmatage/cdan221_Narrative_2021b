@@ -38,8 +38,9 @@ public class GameHandler : MonoBehaviour{
 				UpdateDateScore("Jett", dateJett);
         }
 
-        void Update(){
+        public void Update(){
                 if (Input.GetKeyDown(KeyCode.Escape)){
+					Debug.Log ("I hit escape!");
                         if (GameisPaused){
                                 Resume();
                         }
