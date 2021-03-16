@@ -171,6 +171,7 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
+				
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
@@ -237,6 +238,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "I'm not a huge fan.";
+				gameHandlerObj.UpdateDateScore("Baz", -1);
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -250,16 +252,17 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Yeah! I love coming to the beach.";
+				gameHandlerObj.UpdateDateScore("Baz", 1);
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-			public void SceneChange2a(){
+			public void SceneChange1(){
                SceneManager.LoadScene("Scene1b");
         }
-        public void SceneChange2b(){
+        public void SceneChange2(){
                 SceneManager.LoadScene("Scene1b");
         }
-}
+	}

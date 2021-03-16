@@ -8,7 +8,7 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour{
 
 		public static int dateBaz = 0;
-		public static int dateNat = 0;
+		public static int dateNatassha = 0;
 		public static int dateJett = 0;
 		//public GameObject textDateScore;
 		
@@ -34,7 +34,7 @@ public class GameHandler : MonoBehaviour{
         void Start(){
                 pauseMenuUI.SetActive(false);
 				UpdateDateScore("Baz", dateBaz);
-				UpdateDateScore("Nat", dateNat);
+				UpdateDateScore("Natas'sha", dateNatassha);
 				UpdateDateScore("Jett", dateJett);
         }
 
@@ -55,9 +55,9 @@ public class GameHandler : MonoBehaviour{
 				dateBaz += score;
 				Debug.Log("Current Baz Stat = " + dateBaz);
 			}
-			else if (dateName == "Nat"){
-				dateNat += score;
-				Debug.Log("Current Nat Stat = " + dateNat);
+			else if (dateName == "Natas'sha"){
+				dateNatassha += score;
+				Debug.Log("Current Natas'sha Stat = " + dateNatassha);
 			}
 			else if (dateName == "Jett"){
 				dateJett += score;
@@ -69,8 +69,8 @@ public class GameHandler : MonoBehaviour{
                 if (dateName == "Baz"){
 				return dateBaz;
 			}
-			else if (dateName == "Nat"){
-				return dateNat;
+			else if (dateName == "Natas'sha"){
+				return dateNatassha;
 			}
 			else if (dateName == "Jett"){
 				return dateJett;
