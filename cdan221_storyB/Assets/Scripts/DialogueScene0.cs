@@ -16,6 +16,7 @@ public class DialogueScene0 : MonoBehaviour {
 		public Text Char4name;
 		public Text Char4speech;
         public GameObject dialogue;
+		public GameObject dialogue2;
         public GameObject ArtChar1;
 		public GameObject ArtChar2;
 		public GameObject ArtChar3;
@@ -33,10 +34,11 @@ public class DialogueScene0 : MonoBehaviour {
 
 void Start(){         // initial visibility settings
         dialogue.SetActive(true);
+		dialogue2.SetActive(false);
         ArtChar1.SetActive(false);
 		ArtChar2.SetActive(false);
 		ArtChar3.SetActive(false);
-        ArtBG1.SetActive(true);
+        ArtBG1.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
 		Choice1c.SetActive(false);
@@ -60,7 +62,6 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(true);
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Wakey wakey, human.";
@@ -114,48 +115,48 @@ public void talking(){         // main story function. Players hit next to progr
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-                Char1name.text = "YOU";
-                Char1speech.text = "They're pretty cute...";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char3name.text = "YOU";
+                Char3speech.text = "They're pretty cute...";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
        else if (primeInt == 101){
-                Char1name.text = "YOU";
-                Char1speech.text = "Fine, why not.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char3name.text = "YOU";
+                Char3speech.text = "Fine, why not.";
+                Char4name.text = "";
+                Char4speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
         }
 
        else if (primeInt == 200){
-                Char1name.text = "YOU";
-                Char1speech.text = "They have an interesting photo...hard to tell who's who.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char3name.text = "YOU";
+                Char3speech.text = "Weird that the fish is in the photo. Must like fishing.";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
        else if (primeInt == 201){
-                Char1name.text = "YOU";
-                Char1speech.text = "Oh well, worth a shot.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char3name.text = "YOU";
+                Char3speech.text = "Oh well, worth a shot.";
+                Char4name.text = "";
+                Char4speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
         }
 		
 		else if (primeInt == 300){
-                Char1name.text = "YOU";
-                Char1speech.text = "They seem pretty nice...a bit weird.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char3name.text = "YOU";
+                Char3speech.text = "They seem pretty nice...a bit weird.";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
        else if (primeInt == 301){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ok, let's do it.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char3name.text = "YOU";
+                Char3speech.text = "Ok, let's do it.";
+                Char4name.text = "";
+                Char4speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene3Button.SetActive(true);
@@ -164,42 +165,48 @@ public void talking(){         // main story function. Players hit next to progr
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "Different...";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char3name.text = "YOU";
+                Char3speech.text = "Different...";
+                Char4name.text = "";
+                Char4speech.text = "";
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
 				Choice1c.SetActive(false);
+				ArtChar1.SetActive(true);
+				ArtBG1.SetActive(true);
                 nextButton.SetActive(true);
-				dialogue.SetActive(true);
+				dialogue2.SetActive(true);
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "Hm...Interesting";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char3name.text = "YOU";
+                Char3speech.text = "Hm...Interesting";
+                Char4name.text = "";
+                Char4speech.text = "";
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
 				Choice1c.SetActive(false);
+				ArtChar2.SetActive(true);
+				ArtBG1.SetActive(true);
                 nextButton.SetActive(true);
-				dialogue.SetActive (true);
+				dialogue2.SetActive (true);
                 allowSpace = true;
         }
 		public void Choice1cFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ok...";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char3name.text = "YOU";
+                Char3speech.text = "Ok...";
+                Char4name.text = "";
+                Char4speech.text = "";
                 primeInt = 299;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
 				Choice1c.SetActive(false);
+				ArtChar3.SetActive(true);
+				ArtBG1.SetActive(true);
                 nextButton.SetActive(true);
-				dialogue.SetActive(true);
+				dialogue2.SetActive(true);
                 allowSpace = true;
         }
 
