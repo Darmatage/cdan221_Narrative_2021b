@@ -24,7 +24,7 @@ public class DialogueScene0 : MonoBehaviour {
         public GameObject Choice1b;
 		public GameObject Choice1c;
         public GameObject NextScene1Button;
-        public GameObject NextScene2Button;
+		public GameObject NextScene2Button;
 		public GameObject NextScene3Button;
         public GameObject nextButton;
        //public GameObject gameHandler;
@@ -41,7 +41,7 @@ void Start(){         // initial visibility settings
         Choice1b.SetActive(false);
 		Choice1c.SetActive(false);
         NextScene1Button.SetActive(false);
-        NextScene2Button.SetActive(false);
+		NextScene2Button.SetActive(false);
 		NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
    }
@@ -62,7 +62,7 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 2){
                ArtChar1.SetActive(true);
                 dialogue.SetActive(true);
-                Char1name.text = "Jeda";
+                Char1name.text = "YOU";
                 Char1speech.text = "Wakey wakey, human.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -75,7 +75,7 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "Jeda";
+                Char1name.text = "YOU";
                 Char1speech.text = "I know I did not hit you that hard.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -100,7 +100,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 8){
-                Char1name.text = "Jeda";
+                Char1name.text = "YOU";
                 Char1speech.text = "Do not play the stupid. You will take me to him.";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -186,6 +186,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Choice1b.SetActive(false);
 				Choice1c.SetActive(false);
                 nextButton.SetActive(true);
+				dialogue.SetActive (true);
                 allowSpace = true;
         }
 		public void Choice1cFunct(){
@@ -198,6 +199,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Choice1b.SetActive(false);
 				Choice1c.SetActive(false);
                 nextButton.SetActive(true);
+				dialogue.SetActive(true);
                 allowSpace = true;
         }
 

@@ -33,9 +33,9 @@ public class GameHandler : MonoBehaviour{
 
         void Start(){
                 pauseMenuUI.SetActive(false);
-				UpdateDateScore("Baz", dateBaz);
-				UpdateDateScore("Natas'sha", dateNatassha);
-				UpdateDateScore("Jett", dateJett);
+				//UpdateDateScore("Baz", dateBaz);
+				//UpdateDateScore("Natas'sha", dateNatassha);
+				//UpdateDateScore("Jett", dateJett);
         }
 
         public void Update(){
