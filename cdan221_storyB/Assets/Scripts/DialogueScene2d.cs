@@ -190,7 +190,7 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
     public void SceneChange1(){
-               SceneManager.LoadScene("Scene2");
+               SceneManager.LoadScene("ScenePath2End");
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene1c");

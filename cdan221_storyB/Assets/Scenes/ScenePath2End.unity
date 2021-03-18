@@ -721,7 +721,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2041419555}
         m_MethodName: talking
         m_Mode: 1
         m_Arguments:
@@ -2748,6 +2748,11 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 8778004177737298230, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8778004178127023897, guid: 8773cd85f825b81409ae9ecf6a1c2079,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3378,7 +3383,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2041419550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6c2baa6fcfecba4aa2066deb409bd13, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e4533b90cb1ba6439fdc9d607537cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -3387,8 +3392,10 @@ MonoBehaviour:
   Char2name: {fileID: 1645133870}
   Char2speech: {fileID: 1769248564}
   dialogue: {fileID: 1417209498}
-  ArtChar1a: {fileID: 496616645}
-  ArtChar1b: {fileID: 2136071889}
+  ArtChar2a: {fileID: 496616645}
+  ArtChar2b: {fileID: 2136071889}
+  ArtChar2c: {fileID: 2144066901}
+  ArtChar2d: {fileID: 1190972716}
   ArtBG1: {fileID: 1600518546}
   ArtBG2: {fileID: 709046631}
   nextButton: {fileID: 193156823}
