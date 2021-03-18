@@ -23,7 +23,6 @@ public class DialogueScene0 : MonoBehaviour {
         public GameObject ArtBG1;
 		public GameObject ArtBG2;
         public GameObject Choice1a;
-        public GameObject Choice1b;
 		public GameObject Choice1c;
         public GameObject NextScene1Button;
 		public GameObject NextScene2Button;
@@ -42,7 +41,6 @@ void Start(){         // initial visibility settings
         ArtBG1.SetActive(false);
 		ArtBG2.SetActive(true);
         Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
 		Choice1c.SetActive(false);
         NextScene1Button.SetActive(false);
 		NextScene2Button.SetActive(false);
@@ -113,7 +111,6 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtBG2.SetActive(false);
 				dialogue.SetActive(false);
                 Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
 				Choice1c.SetActive(true); // function Choice1cFunct()
         }
 // ENCOUNTER AFTER CHOICE #1
@@ -131,22 +128,6 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
-        }
-
-       else if (primeInt == 200){
-                Char3name.text = "YOU";
-                Char3speech.text = "Vampires can have a bit of an ego problem...";
-                Char4name.text = "";
-                Char4speech.text = "";
-        }
-       else if (primeInt == 201){
-                Char3name.text = "YOU";
-                Char3speech.text = "I'll give'em a chance.";
-                Char4name.text = "";
-                Char4speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
         }
 		
 		else if (primeInt == 300){
@@ -174,7 +155,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
                 primeInt = 99;
                 Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
 				Choice1c.SetActive(false);
 				ArtChar1.SetActive(true);
 				ArtBG1.SetActive(true);
@@ -189,7 +169,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
                 primeInt = 199;
                 Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
 				Choice1c.SetActive(false);
 				ArtChar2.SetActive(true);
 				ArtBG1.SetActive(true);
@@ -204,7 +183,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Char4speech.text = "";
                 primeInt = 299;
                 Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
 				Choice1c.SetActive(false);
 				ArtChar3.SetActive(true);
 				ArtBG1.SetActive(true);
@@ -215,9 +193,6 @@ public void talking(){         // main story function. Players hit next to progr
 
         public void SceneChange1(){
                SceneManager.LoadScene("Scene1a");
-        }
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene2a");
         }
 		public void SceneChange3(){
                 SceneManager.LoadScene("Scene3a");
