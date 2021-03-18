@@ -134,7 +134,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "Kaitlyn";
-			Char3speech.text = "These idiots thought they could get away with being hipsters AND furries?! How cringe could you possibly be?! DIE!";
+			Char3speech.text = "These idiots thought they could get away with being hipsters AND furries?! How cringe could you possibly be?! You're worse than stupid goth vampires!";
 		}
 		else if (primeInt == 9){
 			Char1name.text = ""; 

@@ -176,7 +176,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "YOU";
-                Char2speech.text = "(Natas’sha gives you a kiss on the cheek. Ouch, it burns! But you know what? Worth it!)";
+                Char2speech.text = "(Natas’sha gives me a kiss on the cheek. Ouch, it burns! But you know what? Worth it!)";
         }
        else if (primeInt == 26){
                 Char1name.text = "Natas’sha";
