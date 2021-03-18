@@ -15,6 +15,7 @@ public class DialogueScene1a : MonoBehaviour {
         public Text Char3speech;
         public GameObject dialogue;
         public GameObject ArtChar1;
+		public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -28,6 +29,7 @@ public class DialogueScene1a : MonoBehaviour {
 void Start(){         // initial visibility settings
         dialogue.SetActive(false);
         ArtChar1.SetActive(false);
+		ArtChar2.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -175,16 +177,18 @@ public void talking(){         // main story function. Players hit next to progr
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
+				ArtChar1.SetActive(false);
+				ArtChar2.SetActive(true);
 				Char3name.text = "";
 				Char3speech.text = "";
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
-                Char2speech.text = "That's ok, you just need to come with the right person.";     
+                Char2speech.text = "You...don't? I mean, it's whatever.";     
         }
        else if (primeInt == 101){
                 Char3name.text = "";
-				Char3speech.text = "(Baz winks- or did he just blink?).";
+				Char3speech.text = "(He seems pretty hurt by that. Who doesn't like the beach?).";
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -194,7 +198,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char3name.text = "";
 				Char3speech.text = "";
 				Char1name.text = "You";
-                Char1speech.text = "Yeah, I guess you're right..";
+                Char1speech.text = "Uh...(Awkward. Let's move on).";
                 Char2name.text = "";
                 Char2speech.text = "";
 				nextButton.SetActive(false);

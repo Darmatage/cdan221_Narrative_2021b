@@ -15,6 +15,7 @@ public class DialogueScene1c : MonoBehaviour {
         public Text Char3speech;
         public GameObject dialogue;
         public GameObject ArtChar1;
+		public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -28,6 +29,7 @@ public class DialogueScene1c : MonoBehaviour {
 void Start(){         // initial visibility settings
         dialogue.SetActive(false);
         ArtChar1.SetActive(false);
+		ArtChar2.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -136,6 +138,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
        else if (primeInt == 200){
+				ArtChar1.SetActive(false);
+				ArtChar2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
