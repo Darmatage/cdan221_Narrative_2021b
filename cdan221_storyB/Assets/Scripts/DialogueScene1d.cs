@@ -15,6 +15,8 @@ public class DialogueScene1d : MonoBehaviour {
         public Text Char3speech;
         public GameObject dialogue;
         public GameObject ArtChar1;
+		public GameObject ArtChar2;
+		public GameObject ArtChar3;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -29,6 +31,8 @@ void Start(){         // initial visibility settings
         dialogue.SetActive(false);
         ArtChar1.SetActive(false);
         ArtBG1.SetActive(true);
+		ArtChar2.SetActive(false);
+		ArtChar3.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -77,6 +81,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char3speech.text = "";
         }
        else if (primeInt == 5){
+				ArtChar3.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -86,6 +91,7 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
+				ArtChar3.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
@@ -124,6 +130,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
+				ArtChar2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";
@@ -144,6 +151,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
        else if (primeInt == 200){
+				ArtChar3.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Baz";

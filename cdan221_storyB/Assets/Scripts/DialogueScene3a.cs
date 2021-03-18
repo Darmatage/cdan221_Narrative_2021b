@@ -60,14 +60,14 @@ public class DialogueScene3a : MonoBehaviour {
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "I'd always heard good things about it, but it never really seemed like my taste; or within my budget).";
+			Char2speech.text = "(I'd always heard good things about it, but it never really seemed like my taste; or within my budget).";
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 4){
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "Luckily today I'm being treated by a princess of Hell.";
+			Char2speech.text = "(Luckily for me, today I'm being treated by a princess of Hell.)";
 		}
 		else if (primeInt == 5){
 			Char1name.text = "Natas'sha"; 

@@ -14,6 +14,8 @@ public class ScenePath1End : MonoBehaviour {
         public GameObject dialogue;
         public GameObject ArtChar1a;
 		public GameObject ArtChar1b;
+		public GameObject ArtChar1c;
+		public GameObject ArtChar1d;
         public GameObject ArtBG1;
 		public GameObject ArtBG2;
         public GameObject nextButton;
@@ -27,6 +29,8 @@ void Start(){         // initial visibility settings
         dialogue.SetActive(false);
         ArtChar1a.SetActive(false);
         ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+		ArtChar1d.SetActive(false);
         endGood.SetActive(false);
         endBad.SetActive(false);
         nextButton.SetActive(true);
@@ -60,48 +64,51 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1a.SetActive(true);
+               ArtChar1b.SetActive(true);
                 dialogue.SetActive(true);
-                Char1name.text = "Jeda";
-                Char1speech.text = "Wakey wakey, human.";
+                Char1name.text = "YOU";
+                Char1speech.text = "So...end of the date.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Wuh..? What happened?";
+                Char2name.text = "Baz";
+                Char2speech.text = "Yup...";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I know I did not hit you that hard.";
+                Char1name.text = "YOU";
+                Char1speech.text = "(Baz seems like he's about to cry).";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
-                //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                Char1name.text = "YOU";
+                Char1speech.text = "Are you ok Baz?";
                 Char2name.text = "";
                 Char2speech.text = "";
+                //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt ==7){
+       else if (primeInt ==6){
+				ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
+                Char2name.text = "Baz";
+                Char2speech.text = "(Baz breaks out crying). I'm sorry...I can't do this.";
+		  }
+       else if (primeInt ==7){
+				ArtChar1b.SetActive(false);
+				ArtChar1c.SetActive(false);
+                Char1name.text = "YOU";
+                Char1speech.text = "(You watch as the heart-broken fish man dramatically leaps into the sea. Next time, check who's in the photo).";
+                Char2name.text = "";
+                Char2speech.text = "";		
         }
        else if (primeInt == 8){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
@@ -112,46 +119,53 @@ public void talking(){         // main story function. Players hit next to progr
 		else if (primeInt == 20){
                ArtChar1a.SetActive(true);
                 dialogue.SetActive(true);
-                Char1name.text = "Jeda";
-                Char1speech.text = "Wakey wakey, human.";
+                Char1name.text = "YOU";
+                Char1speech.text = "So...end of the date.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==21){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Wuh..? What happened?";
+                Char2name.text = "Baz";
+                Char2speech.text = "Yup..but I don't think it'll be the last.";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 22){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I know I did not hit you that hard.";
+				ArtChar1d.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "(You look at Baz, noticing his blush).";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 23){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
+                Char1name.text = "YOU";
+                Char1speech.text = "You want to meet again?";
+                Char2name.text = "";
+                Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 24){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt ==25){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
+                Char2name.text = "Baz";
+                Char2speech.text = "Yeah! I really like you, you're just...not like other mortals.";
         }
-       else if (primeInt == 26){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
+       else if (primeInt ==25){
+                Char1name.text = "YOU";
+                Char1speech.text = "And you're not like other fish. Same place next week?";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+       else if (primeInt ==26){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "BAZ";
+                Char2speech.text = "It's a date.";
+        }
+       else if (primeInt == 27){
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
