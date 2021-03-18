@@ -21,6 +21,7 @@ public class DialogueScene0 : MonoBehaviour {
 		public GameObject ArtChar2;
 		public GameObject ArtChar3;
         public GameObject ArtBG1;
+		public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
 		public GameObject Choice1c;
@@ -33,12 +34,13 @@ public class DialogueScene0 : MonoBehaviour {
         private bool allowSpace = true;
 
 void Start(){         // initial visibility settings
-        dialogue.SetActive(true);
+        dialogue.SetActive(false);
 		dialogue2.SetActive(false);
         ArtChar1.SetActive(false);
 		ArtChar2.SetActive(false);
 		ArtChar3.SetActive(false);
         ArtBG1.SetActive(false);
+		ArtBG2.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
 		Choice1c.SetActive(false);
@@ -64,50 +66,51 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 2){
                 dialogue.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "Wakey wakey, human.";
+                Char1speech.text = "Ugh.... I’ve decided it...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "YOU";
-                Char1speech.text = "...";
+                Char1speech.text = "I’M TIRED OF BEING SINGLE!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
                 Char1name.text = "YOU";
-                Char1speech.text = "I know I did not hit you that hard.";
+                Char1speech.text = "(You fish beneath your pillow for your phone, and open the dating app you’ve left untouched for months).";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
                 Char1name.text = "YOU";
-                Char1speech.text = "...";
+                Char1speech.text = "Sinder.... A cesspool of horny college ghouls, couples looking for a third, and people who just really want to smoke weed. ";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
                 Char1name.text = "YOU";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                Char1speech.text = "You’d tried to be successful on there before, but the dating world can be hard for mortals.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
                 Char1name.text = "YOU";
-                Char1speech.text = "...";
+                Char1speech.text = "Plus, some demons and monsters can be pretty tempermental. ";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 8){
                 Char1name.text = "YOU";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
+                Char1speech.text = "(You take a look at some of the people who have matched with you most recently. Certainly one of them will be willing to give you a shot, right?).";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
+				ArtBG2.SetActive(false);
 				dialogue.SetActive(false);
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
@@ -116,13 +119,13 @@ public void talking(){         // main story function. Players hit next to progr
 // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
                 Char3name.text = "YOU";
-                Char3speech.text = "They're pretty cute...";
+                Char3speech.text = "And the fishing kind. Odd.";
                 Char4name.text = "";
                 Char4speech.text = "";
         }
        else if (primeInt == 101){
                 Char3name.text = "YOU";
-                Char3speech.text = "Fine, why not.";
+                Char3speech.text = "At least we have something in common, let's give it a shot.";
                 Char4name.text = "";
                 Char4speech.text = "";
                 nextButton.SetActive(false);
@@ -132,13 +135,13 @@ public void talking(){         // main story function. Players hit next to progr
 
        else if (primeInt == 200){
                 Char3name.text = "YOU";
-                Char3speech.text = "Weird that the fish is in the photo. Must like fishing.";
+                Char3speech.text = "Vampires can have a bit of an ego problem...";
                 Char4name.text = "";
                 Char4speech.text = "";
         }
        else if (primeInt == 201){
                 Char3name.text = "YOU";
-                Char3speech.text = "Oh well, worth a shot.";
+                Char3speech.text = "I'll give'em a chance.";
                 Char4name.text = "";
                 Char4speech.text = "";
                 nextButton.SetActive(false);
@@ -148,13 +151,13 @@ public void talking(){         // main story function. Players hit next to progr
 		
 		else if (primeInt == 300){
                 Char3name.text = "YOU";
-                Char3speech.text = "They seem pretty nice...a bit weird.";
+                Char3speech.text = "Natas'sha? That's an interesting name.";
                 Char4name.text = "";
                 Char4speech.text = "";
         }
        else if (primeInt == 301){
                 Char3name.text = "YOU";
-                Char3speech.text = "Ok, let's do it.";
+                Char3speech.text = "Seems risky..but why not.";
                 Char4name.text = "";
                 Char4speech.text = "";
                 nextButton.SetActive(false);
@@ -166,7 +169,7 @@ public void talking(){         // main story function. Players hit next to progr
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
                 Char3name.text = "YOU";
-                Char3speech.text = "Different...";
+                Char3speech.text = "A mortal? on Sinder?";
                 Char4name.text = "";
                 Char4speech.text = "";
                 primeInt = 99;
@@ -181,7 +184,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         public void Choice1bFunct(){
                 Char3name.text = "YOU";
-                Char3speech.text = "Hm...Interesting";
+                Char3speech.text = "At least this guy looks nice.";
                 Char4name.text = "";
                 Char4speech.text = "";
                 primeInt = 199;
@@ -196,7 +199,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
 		public void Choice1cFunct(){
                 Char3name.text = "YOU";
-                Char3speech.text = "Ok...";
+                Char3speech.text = "Demon-girl...she looks like a partier.";
                 Char4name.text = "";
                 Char4speech.text = "";
                 primeInt = 299;
