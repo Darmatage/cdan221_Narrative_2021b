@@ -31,7 +31,7 @@ public class DialogueScene2b : MonoBehaviour {
     public GameObject NextScene2Button;
         //public GameObject NextScene3Button;
         public GameObject nextButton;
-       public GameHandler gameHandler;
+       public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -682,6 +682,7 @@ void Start(){         // initial visibility settings
             Char1speech.text = "That's okay. You have an allergy, that should top everything. Though, everything looks really cute. You made everything by hand?";
             Char2name.text = "";
             Char2speech.text = "";
+			gameHandlerObj.UpdateDateScore("Jett", 1);
             primeInt = 299;
             Choice2a.SetActive(false);
             Choice2b.SetActive(false);
@@ -694,6 +695,7 @@ void Start(){         // initial visibility settings
             Char1speech.text = "Oh, okay. So . . . there's like blood and stuff in it?";
             Char2name.text = "";
             Char2speech.text = "";
+			gameHandlerObj.UpdateDateScore("Jett", -1);
             primeInt = 399;
             Choice2a.SetActive(false);
             Choice2b.SetActive(false);

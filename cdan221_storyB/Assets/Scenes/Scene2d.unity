@@ -2313,7 +2313,7 @@ MonoBehaviour:
   Choice1b: {fileID: 1695729167}
   NextScene1Button: {fileID: 799466812}
   nextButton: {fileID: 193156823}
-  gameHandler: {fileID: 1420839577}
+  gameHandlerObj: {fileID: 1420839577}
 --- !u!1 &2068042821
 GameObject:
   m_ObjectHideFlags: 0

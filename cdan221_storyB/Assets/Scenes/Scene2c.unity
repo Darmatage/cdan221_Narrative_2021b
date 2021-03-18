@@ -3561,7 +3561,7 @@ MonoBehaviour:
   NextScene3Button: {fileID: 799466812}
   NextScene4Button: {fileID: 2051417283}
   nextButton: {fileID: 193156823}
-  gameHandler: {fileID: 2130256512}
+  gameHandlerObj: {fileID: 2130256512}
 --- !u!1 &2051417283
 GameObject:
   m_ObjectHideFlags: 0

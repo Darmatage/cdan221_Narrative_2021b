@@ -2463,4 +2463,4 @@ MonoBehaviour:
   Choice1b: {fileID: 1695729167}
   NextScene1Button: {fileID: 799466812}
   nextButton: {fileID: 193156823}
-  gameHandler: {fileID: 1390429003}
+  gameHandlerObj: {fileID: 1390429003}
