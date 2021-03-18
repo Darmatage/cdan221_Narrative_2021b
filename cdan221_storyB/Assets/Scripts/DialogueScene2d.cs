@@ -24,7 +24,7 @@ public class DialogueScene2d : MonoBehaviour {
         public GameObject NextScene1Button;
         //public GameObject NextScene2Button;
         public GameObject nextButton;
-       public GameHandler gameHandler;
+       public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -172,6 +172,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Here, let me help.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				gameHandlerObj.UpdateDateScore("Jett", 1);
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -183,6 +184,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1speech.text = "Geez, that was a hard gust of wind.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -193,6 +195,6 @@ public void talking(){         // main story function. Players hit next to progr
                SceneManager.LoadScene("ScenePath2End");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene1c");
+                SceneManager.LoadScene("ScenePath2End");
         }
 	}

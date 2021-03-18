@@ -3477,4 +3477,4 @@ MonoBehaviour:
   Choice2b: {fileID: 380299579}
   NextScene2Button: {fileID: 799466812}
   nextButton: {fileID: 193156823}
-  gameHandler: {fileID: 813378754}
+  gameHandlerObj: {fileID: 813378754}

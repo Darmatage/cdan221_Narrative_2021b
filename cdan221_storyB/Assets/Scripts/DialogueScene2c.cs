@@ -35,7 +35,7 @@ public class DialogueScene2c : MonoBehaviour {
         public GameObject NextScene3Button;
         public GameObject NextScene4Button;
         public GameObject nextButton;
-       public GameHandler gameHandler;
+       public GameHandler gameHandlerObj;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -900,6 +900,7 @@ public void talking(){         // main story function. Players hit next to progr
             Char1speech.text = "I-I was gardening earlier today and I completely forgot I had it. I knew I should've checked my purse before coming here, I'm so sorry!";
             Char2name.text = "";
             Char2speech.text = "";
+			gameHandlerObj.UpdateDateScore("Jett", 1);
             primeInt = 299;
             Choice2a.SetActive(false);
             Choice2b.SetActive(false);
@@ -912,6 +913,7 @@ public void talking(){         // main story function. Players hit next to progr
             Char1speech.text = "I . . . I packed it in case this date went south. Y'know . . . I thought you were gonna try and suck my blood or something.";
             Char2name.text = "";
             Char2speech.text = "";
+			gameHandlerObj.UpdateDateScore("Jett", -1);
             primeInt = 399;
             Choice2a.SetActive(false);
             Choice2b.SetActive(false);
