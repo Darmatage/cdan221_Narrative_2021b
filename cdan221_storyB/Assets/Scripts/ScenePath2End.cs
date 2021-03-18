@@ -204,7 +204,7 @@ public void talking(){         // main story function. Players hit next to progr
             Char2name.text = "Jett";
             Char2speech.text = ". . .";
         }
-        else if (primeInt == 26){
+        else if (primeInt == 31){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jett";
