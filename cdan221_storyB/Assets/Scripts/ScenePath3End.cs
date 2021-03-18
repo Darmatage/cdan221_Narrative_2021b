@@ -14,6 +14,7 @@ public class ScenePath3End : MonoBehaviour {
         public GameObject dialogue;
         public GameObject ArtChar1a;
 		public GameObject ArtChar1b;
+		public GameObject ArtChar1c;
         public GameObject ArtBG1;
 		public GameObject ArtBG2;
         public GameObject nextButton;
@@ -27,6 +28,7 @@ void Start(){         // initial visibility settings
         dialogue.SetActive(false);
         ArtChar1a.SetActive(false);
         ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
         endGood.SetActive(false);
         endBad.SetActive(false);
         nextButton.SetActive(true);
@@ -88,12 +90,16 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
+				ArtChar1c.SetActive(true);
+				ArtChar1a.SetActive(false);
                 Char1name.text = "Natas'sha";
                 Char1speech.text = "And, by the way, you should NEVER lie to me. EVER.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
+				ArtChar1a.SetActive(true);
+				ArtChar1c.SetActive(false);
                 Char1name.text = "Natas'sha";
                 Char1speech.text = "But we can meet again, yeah. Just not for a date.";
                 Char2name.text = "";
@@ -112,8 +118,17 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "(Natas'sha laughs at me as the air around us grows hotter.)";
 		}
        else if (primeInt ==10){
+				ArtChar1a.SetActive(false);
+				ArtBG2.SetActive(false);
+				ArtBG1.SetActive(true);
                 Char1name.text = "Natas'sha";
                 Char1speech.text = "Bye for now, sweetie! I hope you’ll look forward to seeing all my favorite torture methods!";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+       else if (primeInt ==11){
+                Char1name.text = "Natas'sha";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
@@ -143,6 +158,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Really?";
         }
        else if (primeInt == 23){
+				ArtChar1a.SetActive(false);
+				ArtChar1b.SetActive(true);
                 Char1name.text = "Natas'sha";
                 Char1speech.text = "Yeah, really! I expected you to be kind of lame, honestly, but… You’re cool. Like, really cool!";
                 Char2name.text = "";
@@ -164,6 +181,12 @@ public void talking(){         // main story function. Players hit next to progr
        else if (primeInt == 26){
                 Char1name.text = "Natas’sha";
                 Char1speech.text = "Next time you can treat me to your favorite place, alright? Until then, babe!";
+                Char2name.text = "";
+                Char2speech.text = "";
+		}
+		else if (primeInt == 27){
+                Char1name.text = "Natas’sha";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons

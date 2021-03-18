@@ -71,7 +71,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "(Before I could process what was happening, a strangely-dressed human girl came crashing through the window.)";
+			Char2speech.text = "(I didn't even have time to make amends with Natas'sha before some strangely-dressed human girl came crashing through the window.)";
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
@@ -95,6 +95,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char3speech.text = "QUIET, WORM! And don't call me 'lady!'";
 		}
 		else if (primeInt == 5){
+			Char3speech.gameObject.GetComponentInParent<shaker>().ChangeShake(1f);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
@@ -114,6 +115,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char3speech.text = "";
 		}
 			else if (primeInt == 7){
+			Char3speech.gameObject.GetComponentInParent<shaker>().ChangeShake(0f);
 			ArtChar1b.SetActive(false);
 			ArtChar4b.SetActive(true);
 			Char1name.text = ""; 
@@ -124,6 +126,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char3speech.text = "Huh?! You two mind your own business! I’m here to hunt werewolves!";
 		}
 		else if (primeInt == 8){
+			Char3speech.gameObject.GetComponentInParent<shaker>().ChangeShake(1f);
 			ArtChar4b.SetActive(false);
 			ArtChar4c.SetActive(true);
 			Char1name.text = ""; 
@@ -152,6 +155,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char3speech.text = "";
 		}
 		else if (primeInt == 11){
+			Char3speech.gameObject.GetComponentInParent<shaker>().ChangeShake(0f);
 			ArtChar1a.SetActive(false);
 			ArtChar4b.SetActive(true);
 			Char1name.text = ""; 
@@ -172,6 +176,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char3speech.text = "What did you just say?";
 		}
 		else if (primeInt == 13){
+			Char3speech.gameObject.GetComponentInParent<shaker>().ChangeShake(2f);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
@@ -180,6 +185,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char3speech.text = "DID SHE SERIOUSLY JUST SAY THAT? IN 2021? WHAT KIND OF OUTDATED SATIRE IS THIS?!";
 		}
 		else if (primeInt == 14){
+			Char3speech.gameObject.GetComponentInParent<shaker>().ChangeShake(0f);
 			ArtChar4b.SetActive(false);
 			ArtChar4c.SetActive(true);
 			Char1name.text = ""; 
@@ -254,6 +260,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char3speech.text = "Want to....";
 		} 
 		else if (primeInt == 105){
+			Char3speech.gameObject.GetComponentInParent<shaker>().ChangeShake(4f);
 			ArtChar4d.SetActive(false);
 			Char1name.text = ""; 
 			Char1speech.text = "";
@@ -359,7 +366,7 @@ public class DialogueScene3d : MonoBehaviour {
 		Char1name.text = ""; 
 		Char1speech.text = "";
 		Char2name.text = "YOU"; 
-		Char2speech.text = "(There's no time to think! I grab a knife from the neighboring table.)";
+		Char2speech.text = "(There's no time to think! I'll grab a knife from the neighboring table!)";
 		Char3name.text = "";
 		Char3speech.text = "";
 		gameHandlerObj.UpdateDateScore("Natas'sha", 1);

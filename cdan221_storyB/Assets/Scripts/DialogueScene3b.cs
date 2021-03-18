@@ -16,6 +16,7 @@ public class DialogueScene3b : MonoBehaviour {
 	public GameObject dialogue; 
 	public GameObject ArtChar1a; 
 	public GameObject ArtChar1b; 
+	public GameObject ArtChar3; 
 	public GameObject ArtBG1; 
 	public GameObject Choice1a; 
 	public GameObject Choice1b; 
@@ -30,6 +31,7 @@ public class DialogueScene3b : MonoBehaviour {
 		dialogue.SetActive(false);
 		ArtChar1a.SetActive(false); 
 		ArtChar1b.SetActive(false);
+		ArtChar3.SetActive(false);
 		ArtBG1.SetActive(true);
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -52,7 +54,7 @@ public class DialogueScene3b : MonoBehaviour {
 			// AudioSource.Play();
 		}
 		else if (primeInt == 2){ 
-			 
+			ArtChar3.SetActive(true);
 			dialogue.SetActive(true); 
 			Char1name.text = ""; 
 			Char1speech.text = "";
@@ -62,6 +64,7 @@ public class DialogueScene3b : MonoBehaviour {
 			Char3speech.text = "Hey cuties! What I can get you two?";
 		}
 		else if (primeInt ==3){
+			ArtChar3.SetActive(false);
 			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas’sha"; 
 			Char1speech.text = "Heyyy Lulu! I’ll have my usual.";
@@ -73,6 +76,7 @@ public class DialogueScene3b : MonoBehaviour {
 		}
 		else if (primeInt == 4){
 			ArtChar1a.SetActive(false);
+			ArtChar3.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
@@ -81,6 +85,7 @@ public class DialogueScene3b : MonoBehaviour {
 			Char3speech.text = "Of course! I'll take that cup for you, babe.";
 		}
 		else if (primeInt == 5){
+			ArtChar3.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
@@ -90,6 +95,7 @@ public class DialogueScene3b : MonoBehaviour {
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 6){
+			ArtChar3.SetActive(false);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
@@ -147,7 +153,7 @@ public class DialogueScene3b : MonoBehaviour {
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "(I get the feeling that Natas’sha is judging your diet….)"; 
+			Char2speech.text = "(I get the feeling that Natas’sha is judging my diet….)"; 
 			Char3name.text = "";
 			Char3speech.text = "";
 			nextButton.SetActive(false); 

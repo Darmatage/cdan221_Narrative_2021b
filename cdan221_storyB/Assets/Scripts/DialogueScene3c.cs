@@ -17,6 +17,7 @@ public class DialogueScene3c : MonoBehaviour {
 	public GameObject ArtChar1a; 
 	public GameObject ArtChar1b; 
 	public GameObject ArtChar1c; 
+	public GameObject ArtChar3; 
 	public GameObject ArtBG1; 
 	public GameObject Choice1a; 
 	public GameObject Choice1b; 
@@ -32,6 +33,7 @@ public class DialogueScene3c : MonoBehaviour {
 		ArtChar1a.SetActive(false); 
 		ArtChar1b.SetActive(false);
 		ArtChar1c.SetActive(false);
+		ArtChar3.SetActive(false);
 		ArtBG1.SetActive(true);
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
@@ -64,6 +66,7 @@ public class DialogueScene3c : MonoBehaviour {
 			Char3speech.text = "";
 		}
 		else if (primeInt ==3){
+			Char1speech.gameObject.GetComponentInParent<shaker>().ChangeShake(0f);
 			Char1name.text = "Natas’sha"; 
 			Char1speech.text = "Of course! Too little people care about that kind of stuff these days. ESPECIALLY in Hell!";
 			Char2name.text = ""; 
@@ -102,14 +105,18 @@ public class DialogueScene3c : MonoBehaviour {
 			Char3speech.text = "";
 		}
 			else if (primeInt == 7){
+			ArtChar3.SetActive(true);
+			ArtChar1a.SetActive(false);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "Lulu";
-			Char3speech.text = "Two Styx Teas for Natas’sha and friend!";
+			Char3speech.text = "Two drinks for Natas’sha and friend!";
 		}
 		else if (primeInt == 8){
+			ArtChar3.SetActive(false);
+			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas’sha"; 
 			Char1speech.text = "Speaking of!";
 			Char2name.text = ""; 
@@ -155,6 +162,7 @@ public class DialogueScene3c : MonoBehaviour {
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 101){ 
+			Char1speech.gameObject.GetComponentInParent<shaker>().ChangeShake(2f);
 			ArtChar1b.SetActive(false);
 			ArtChar1c.SetActive(true);
 			Char1name.text = "Natas’sha"; 
@@ -189,8 +197,9 @@ public class DialogueScene3c : MonoBehaviour {
 			Char3speech.text = "";
 		} 
 		else if (primeInt == 105){
+			Char1speech.gameObject.GetComponentInParent<shaker>().ChangeShake(0f);
 			Char1name.text = "Natas’sha"; 
-			Char1speech.text = "LARGE COMPANIES ARE THE GREATEST BREEDING GROUND FOR DAMNED SOULS. THAT’S FOOD FOR DEMONS! THAT’S GOOD FOR THE ENVIRONMENT!!";
+			Char1speech.text = "DON'T YOU KNOW LARGE COMPANIES ARE THE GREATEST BREEDING GROUND FOR DAMNED SOULS? MAYBE YOU DON'T CARE, BUT THAT'S GOOD FOR *MY* ENVIRONMENT!";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
