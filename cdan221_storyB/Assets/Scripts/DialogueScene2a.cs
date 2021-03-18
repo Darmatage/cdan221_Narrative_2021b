@@ -17,6 +17,8 @@ public class DialogueScene2a : MonoBehaviour {
         public GameObject ArtChar2a;
     public GameObject ArtChar2b;
     public GameObject ArtChar2c;
+    public GameObject ArtChar2d;
+    public GameObject ArtChar2e;
     public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -32,6 +34,8 @@ void Start(){         // initial visibility settings
         ArtChar2a.SetActive(false);
         ArtChar2b.SetActive(false);
         ArtChar2c.SetActive(false);
+        ArtChar2d.SetActive(false);
+        ArtChar2e.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -67,7 +71,7 @@ public void talking(){         // main story function. Players hit next to progr
         {
             dialogue.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "I decided to go on a date with Jett. \n   He seemed sweet enough, despite the odd typing style…";
+            Char1speech.text = "I decided to go on a date with Jett.\nHe seemed sweet enough, despite the odd typing style, but that was fine.";
             Char2speech.text = "";
 
         }
@@ -75,7 +79,7 @@ public void talking(){         // main story function. Players hit next to progr
         {
             dialogue.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "I decided to go on a date with Jett. \n He seemed sweet enough, despite the odd typing style… \n Not to mention, vampires are historically very good lovers. If you manage to score a date with a vampire, you’d be an idiot to turn it down.";
+            Char1speech.text = "I decided to go on a date with Jett.\nHe seemed sweet enough, despite the odd typing style, but that was fine.\nHe's a vampire and everyone knows vampires are historically good lovers.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -83,7 +87,7 @@ public void talking(){         // main story function. Players hit next to progr
         {
             dialogue.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "We decided to go on a date to . . . the graveyard?";
+            Char1speech.text = "I decided to go on a date with Jett.\nHe seemed sweet enough, despite the odd typing style, but that was fine.\nHe's a vampire and everyone knows vampires are historically good lovers.\nIf you managed to snag a date with a vampire, you'd be an absolute idiot to turn it down.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -91,7 +95,7 @@ public void talking(){         // main story function. Players hit next to progr
         {
             dialogue.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "We decided to go on a date to . . . the graveyard? \n Okay, not the weirdest date I’ve been on.";
+            Char1speech.text = "So, after chatting for a bit, we decided to go on a date to a . . . graveyard?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -99,7 +103,7 @@ public void talking(){         // main story function. Players hit next to progr
         {
             dialogue.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "As I walk through past the tombstones,";
+            Char1speech.text = "So after chatting for a bit, we decided to go on a date to a . . . graveyard?\nOkay, not the weirdest date I’ve been on, so I can't really complain.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -107,7 +111,7 @@ public void talking(){         // main story function. Players hit next to progr
         {
             dialogue.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "As I walk through past the tombstones, \n occasionally looking at the headstones,";
+            Char1speech.text = "As I walk through past the tombstones,";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -115,11 +119,19 @@ public void talking(){         // main story function. Players hit next to progr
         {
             dialogue.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "As I walk through past the tombstones, \n occasionally looking at the headstones, \n a little bat flew in front of me before a puff of black appeared around it.";
+            Char1speech.text = "As I walk through past the tombstones,\noccasionally looking at the different headstones,";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 10)
+        {
+            dialogue.SetActive(true);
+            Char1name.text = "YOU";
+            Char1speech.text = "As I walk through past the tombstones,\noccasionally looking at the different headstones,\na little bat flew in front of me before landing with a puff of smoke.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 11)
         {
             ArtChar2a.SetActive(true);
             Char1name.text = "";
@@ -127,40 +139,40 @@ public void talking(){         // main story function. Players hit next to progr
             Char2name.text = "Jett";
             Char2speech.text = "Hi! Are you my date this evening?";
         }
-        else if (primeInt == 11)
-        {
-            ArtChar2a.SetActive(true);
-            Char1name.text = "YOU";
-            Char1speech.text = "I blinked before I gave him a small smile and a nod.";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
         else if (primeInt == 12)
         {
             ArtChar2a.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "Yeah. Hi.";
+            Char1speech.text = "I blinked before I gave him a small smile.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 13)
+        {
+            ArtChar2a.SetActive(true);
+            Char1name.text = "YOU";
+            Char1speech.text = "Yes I am. Hello there.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 14)
         {
             ArtChar2a.SetActive(false);
             ArtChar2c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Jett";
-            Char2speech.text = "Oh! Your outfit is so poggers!!";
+            Char2speech.text = "Oh, that's so poggers!";
         }
-        else if (primeInt == 14)
+        else if (primeInt == 15)
         {
             ArtChar2c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Jett";
-            Char2speech.text = "Oh! Your outfit is so poggers!! \n I’m Jett, nice to meet you.";
+            Char2speech.text = "Oh, that's so poggers!!\nI’m Jett, nice to meet you.";
         }
-        else if (primeInt == 15)
+        else if (primeInt == 16)
         {
             ArtChar2c.SetActive(true);
             Char1name.text = "YOU";
@@ -168,29 +180,31 @@ public void talking(){         // main story function. Players hit next to progr
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 16)
+        else if (primeInt == 17)
         {
-            ArtChar2c.SetActive(true);
+            ArtChar2c.SetActive(false);
+            ArtChar2d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Jett";
             Char2speech.text = "Oh, yeah.";
         }
-        else if (primeInt == 17)
-        {
-            ArtChar2c.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Jett";
-            Char2speech.text = "Oh, yeah. \n That’s just something I happen to say sometimes!";
-        }
         else if (primeInt == 18)
         {
-            ArtChar2c.SetActive(true);
+            ArtChar2c.SetActive(false);
+            ArtChar2d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Jett";
-            Char2speech.text = "Oh, yeah. \n That’s just something I happen to say sometimes!";
+            Char2speech.text = "Oh, yeah.\nThat’s just something I happen to say sometimes!";
+        }
+        else if (primeInt == 19)
+        {
+            ArtChar2d.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jett";
+            Char2speech.text = "Oh, yeah.\nThat’s just something I happen to say sometimes!";
             //gameHandler.AddPlayerStat(1);
             // Turn off "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
@@ -202,17 +216,38 @@ public void talking(){         // main story function. Players hit next to progr
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
+            ArtChar2d.SetActive(false);
+            ArtChar2e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Jett";
-            Char2speech.text = "R-Really? T-T-Thank you! Lets have a super awesome date then!";
+            Char2speech.text = "R-R-Really?";
         }
         else if (primeInt == 101)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "Lead the way!";
+            Char1speech.text = "Yeah! It fits . . . you!";
             Char2name.text = "";
             Char2speech.text = "";
+        }
+        else if (primeInt == 102)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "Yeah! It fits . . . you!\nIt just matches your being.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+        }
+        else if (primeInt == 103)
+        {
+            ArtChar2e.SetActive(false);
+            ArtChar2c.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jett";
+            Char2speech.text = "Thank you";
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
@@ -220,35 +255,59 @@ public void talking(){         // main story function. Players hit next to progr
 
         else if (primeInt == 200)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Jett";
-            Char2speech.text = "(Chuckles uncomfortably as he looks away).";
+            Char1name.text = "YOU";
+            Char1speech.text = "Really? I've never heard that saying before.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 201)
         {
+            ArtChar2d.SetActive(false);
+            ArtChar2c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Jett";
-            Char2speech.text = "H-How about that date then?";
+            Char2speech.text = "I learned it off the internet!";
         }
-
         else if (primeInt == 202)
         {
+            ArtChar2d.SetActive(false);
+            ArtChar2c.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jett";
+            Char2speech.text = "I learned it off the internet!\nI thought it was such a fun way of saying ''Cool'' that I thought I'd say it more often!";
+        }
+        else if (primeInt == 203)
+        {
             Char1name.text = "YOU";
-            Char1speech.text = "Alright then . . .";
+            Char1speech.text = "Interesting.";
             Char2name.text = "";
             Char2speech.text = "";
+        }
+        else if (primeInt == 204)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "Interesting.\nYou'll have to teach more some more words.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 205)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jett";
+            Char2speech.text = "Okay! I will!";
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
         }
-	}
+    }
 	
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sounds cute.";
+                Char1speech.text = "That's okay. It sounds cute.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 99;
@@ -258,10 +317,8 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                ArtChar2b.SetActive(true);
-                ArtChar2c.SetActive(false);
                 Char1name.text = "YOU";
-                Char1speech.text = "Oh . . . okay";
+                Char1speech.text = "Really? I've never heard that saying before.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 199;
