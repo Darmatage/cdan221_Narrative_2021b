@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ScenePath1End.unity
     guid: 775a339cb264f6a4fb12e12eb25197b6
   - enabled: 0
-    path: 
+    path: Assets/Scenes/SceneEnd1.unity
     guid: bdf8473cef356b241b9a75ed4d35b268
   - enabled: 1
     path: Assets/Scenes/Scene3b.unity
@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene2c.unity
     guid: 8cdc9861ec833a64da4d69c38ff62292
+  - enabled: 1
+    path: Assets/Scenes/ScenePath2End.unity
+    guid: 14ff83bc2fe6dc74b93dd4794428e799
   m_configObjects: {}
