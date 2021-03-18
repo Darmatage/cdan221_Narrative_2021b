@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class ScenePath3End : MonoBehaviour {
+public class ScenePath2End : MonoBehaviour {
         public int primeInt = 1; // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -83,8 +83,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Actually . . .";
         }
        else if (primeInt == 5){
-            ArtChar2a.SetActive(false)
-            ArtChar2b.SetActive(true)
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jett";
