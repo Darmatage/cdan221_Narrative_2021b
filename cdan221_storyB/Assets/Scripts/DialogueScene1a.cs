@@ -52,7 +52,7 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1.SetActive(true);
+               ArtChar1.SetActive(false);
                 dialogue.SetActive(true);
                 Char3name.text = "";
                 Char3speech.text = "(You chose to go on a date with Sea-bass-tion. He seemed way more down to earth than the others).";
@@ -97,6 +97,7 @@ public void talking(){         // main story function. Players hit next to progr
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 7){
+				ArtChar1.SetActive(true);
 				Char3name.text = "";
 				Char3speech.text = "(You turn to see, running towards you, a reverse fish-man...man-fish?).";
                 Char1name.text = "";
