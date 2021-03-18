@@ -1888,6 +1888,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6376094399426607350, guid: 4db444c1598cd9b49bad6b0da8488af8,
+        type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 1714740718}
     - target: {fileID: 8129646260857126771, guid: 4db444c1598cd9b49bad6b0da8488af8,
         type: 3}
       propertyPath: m_Name
@@ -2110,6 +2115,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2041419554}
     m_Modifications:
+    - target: {fileID: 8778004177140923341, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1390429003}
+    - target: {fileID: 8778004177140923341, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778004177584962180, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1390429003}
+    - target: {fileID: 8778004177584962180, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778004177737298230, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1390429003}
+    - target: {fileID: 8778004177737298230, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778004177737298230, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8778004178505675650, guid: 8773cd85f825b81409ae9ecf6a1c2079,
         type: 3}
       propertyPath: m_Name
@@ -2220,11 +2260,27 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8778004178761382345, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1390429003}
+    - target: {fileID: 8778004178761382345, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8773cd85f825b81409ae9ecf6a1c2079, type: 3}
 --- !u!224 &1714740717 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8778004178505675677, guid: 8773cd85f825b81409ae9ecf6a1c2079,
+    type: 3}
+  m_PrefabInstance: {fileID: 1714740716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1714740718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8778004178505675650, guid: 8773cd85f825b81409ae9ecf6a1c2079,
     type: 3}
   m_PrefabInstance: {fileID: 1714740716}
   m_PrefabAsset: {fileID: 0}
