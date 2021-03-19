@@ -148,7 +148,7 @@ public class DialogueScene3d : MonoBehaviour {
 			ArtChar4c.SetActive(false);
 			ArtChar1a.SetActive(true);
 			Char1name.text = "Natas’sha"; 
-			Char1speech.text = "And I oop-";
+			Char1speech.text = "'And I oop-'";
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "";
@@ -182,7 +182,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "Kaitlyn";
-			Char3speech.text = "DID SHE SERIOUSLY JUST SAY THAT? IN 2021? WHAT KIND OF OUTDATED SATIRE IS THIS?!";
+			Char3speech.text = "DID SHE SERIOUSLY JUST SAY THAT? IN 2021? WHAT KIND OF OUTDATED PARODY IS THIS?!";
 		}
 		else if (primeInt == 14){
 			Char3speech.gameObject.GetComponentInParent<shaker>().ChangeShake(0f);
@@ -200,7 +200,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
-			Char2speech.text = "(Oh, god. Is she seriously going to kill Natas’sha?!)"; 
+			Char2speech.text = "(Oh, god. Is she seriously going to kill Natas’sha over some outdated meme?!)"; 
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
@@ -249,7 +249,7 @@ public class DialogueScene3d : MonoBehaviour {
 			Char2name.text = ""; 
 			Char2speech.text = ""; 
 			Char3name.text = "Kaitlyn";
-			Char3speech.text = "OH, KNOCK IT OFF! Don’t be cute! It makes me nauseous! It makes me want to…!";
+			Char3speech.text = "OH, KNOCK IT OFF! Don’t be cute! It makes me nauseous! It makes me want to..!";
 		} 
 		else if (primeInt == 104){
 			Char1name.text = ""; 

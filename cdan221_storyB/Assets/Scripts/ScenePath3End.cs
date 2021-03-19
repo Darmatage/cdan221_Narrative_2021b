@@ -67,7 +67,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "YOU";
-                Char2speech.text = "That was really awesome. I hope I’m not coming on too strong, but… Could we maybe… see eachother again?";
+                Char2speech.text = "That was really awesome. I hope I’m not coming on too strong, but… could we maybe… see eachother again?";
         }
        else if (primeInt ==3){
                 Char1name.text = "Natas'sha";
@@ -142,7 +142,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "YOU";
-                Char2speech.text = "That was really awesome. I hope I’m not coming on too strong, but… Could we maybe… see eachother again?";
+                Char2speech.text = "That was really awesome. I hope I’m not coming on too strong, but… could we maybe… see eachother again?";
         }
        else if (primeInt ==21){
                 Char1name.text = "Natas'sha";
@@ -161,7 +161,7 @@ public void talking(){         // main story function. Players hit next to progr
 				ArtChar1a.SetActive(false);
 				ArtChar1b.SetActive(true);
                 Char1name.text = "Natas'sha";
-                Char1speech.text = "Yeah, really! I expected you to be kind of lame, honestly, but… You’re cool. Like, really cool!";
+                Char1speech.text = "Yeah, really! I expected you to be kind of lame, honestly, but… you’re cool. Like, really cool!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);

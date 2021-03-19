@@ -70,6 +70,7 @@ public class DialogueScene3a : MonoBehaviour {
 			Char2speech.text = "(Luckily for me, today I'm being treated by a princess of Hell.)";
 		}
 		else if (primeInt == 5){
+			ArtChar1.SetActive(true);
 			Char1name.text = "Natas'sha"; 
 			Char1speech.text = "Yoohooo! Over here!";
 			Char2name.text = ""; 
@@ -77,7 +78,6 @@ public class DialogueScene3a : MonoBehaviour {
 			//gameHandler.AddPlayerStat(1);
 		}
 		else if (primeInt == 6){
-			ArtChar1.SetActive(true);
 			Char1name.text = ""; 
 			Char1speech.text = "";
 			Char2name.text = "YOU"; 
